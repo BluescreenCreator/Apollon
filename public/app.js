@@ -4,7 +4,7 @@ import 'firebase/auth';
 (function() {
 
     //initilize Firebase
-    const = config = {
+    const config = {
     apiKey: "AIzaSyCAf1IK82QhYaxxK0mdbMjkSUnlb-gzxhc",
     authDomain: "apollon-da74a.firebaseapp.com",
     projectId: "apollon-da74a",
