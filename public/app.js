@@ -1,1 +1,2 @@
-console.log(firebase)
+import 'firebase/firestore';
+import 'firebase/auth';
