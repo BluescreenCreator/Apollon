@@ -59,6 +59,8 @@ import 'firebase/auth';
 
 //Auth Google
 
+const GoogleSignUpButton = document.getElementById('SignUpWithGoogle');
+
 function googleProvider() {
     // [START auth_google_provider_create]
     var provider = new firebase.auth.GoogleAuthProvider();
@@ -77,6 +79,8 @@ function googleProvider() {
   
   function googleSignInPopup(provider) {
     // [START auth_google_signin_popup]
+    
+    GoogleSignUpButton.addEventListener('click', e=> {
     firebase.auth()
       .signInWithPopup(provider)
       .then((result) => {
@@ -99,6 +103,7 @@ function googleProvider() {
         // ...
       });
     // [END auth_google_signin_popup]
+    });
   }
   
   
