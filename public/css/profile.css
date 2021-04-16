@@ -219,3 +219,10 @@ ul.resources {
     padding: 0;
     list-style: none;
 }
+
+.help{
+    font-family: 'Lato';
+    color: var(--colorText);
+    font-size: var(--p);
+    text-decoration: none;
+}
