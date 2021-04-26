@@ -1,0 +1,212 @@
+/*CSS für Alles*/
+
+:root {
+    --background-color: #292929;
+    --colorText: #929292;
+    --colorAccent: #ffb100;
+    --p: 18px;
+    --h4: 24px;
+    --h3: 32px;
+    --h2: 42px;
+    --h1: 55px;
+  }
+  
+  body {
+    background-color: var(--background-color);
+    position: relative;
+  }
+  
+  h3 {
+    font-family: 'Raleway';
+    font-size: var(--h3);
+    color: var(--colorText);
+  }
+  
+  h4 {
+    font-family: 'Raleway';
+    font-weight: bold;
+    font-size: var(--h4);
+    color: var(--colorText);
+  }
+  
+  p {
+    font-family: 'Lato';
+    font-size: var(--p);
+    color: var(--colorText);
+  }
+  
+  /*CSS für Header*/
+  
+  header {
+    width: 100%;
+    padding-top: 20px;
+}
+
+.containerHeader {
+    float: left;
+    width: 60%;
+}
+
+.divlogo {
+    position: relative;
+    float: left;
+    width: 10%;
+    padding-right: 100px;
+}
+
+.divIcons {
+    float: right;
+    position: relative;
+    padding-right: 20px;
+    text-align: right;
+}
+
+.icons {
+    padding-right: 20px;
+    transform: scale(0.7, 0.7);
+}
+
+nav {
+    display: inline-block;
+    position: relative;
+    justify-content: left;
+    width: 80%;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    padding-left: 20px;
+    padding-top: 33px;
+    padding-right: 20px;
+    position: relative;
+}
+
+nav ul li a {
+    font-family: 'Raleway';
+    color: var(--colorText);
+    text-decoration: none;
+    font-size: var(--p);
+}
+
+nav ul li .teams {
+    color: var(--colorAccent);
+}
+
+nav ul li a:hover {
+  color: var(--colorAccent);
+}
+
+/* Content */
+
+.content {
+    margin-top: 100px;
+    margin-left: 41px;
+}
+
+.content a {
+    text-decoration: none;
+}
+
+.content p {
+    color: var(--colorAccent);
+}
+
+.profileImages {
+    display: inline-block;
+    margin-left: 230px;
+    margin-top: 10px;
+    position: absolute;
+}
+
+.profileImages img {
+    width: 25%;
+}
+
+.content #profile1 {
+    margin-top: -8px;
+}
+
+.teamSel {
+    width: 57%;
+    float: right;
+    margin-right: 183px;
+    margin-top: -5px;
+}
+
+/* Button */
+
+button {
+    font-family: 'Lato';
+    font-size: var(--p);
+    color: #fff;
+    position: relative;
+    border: 10px solid transparent;
+    border-radius: 21px;
+    width: 300px;
+    height: 70px;
+    background: linear-gradient(to right, #ffb100, #ff1845);
+    background-clip: padding-box;
+    margin-left: -12px;
+    margin-top: 20px;
+    font-size: var(--p);
+}
+
+button a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* CSS für Footer*/
+  
+footer nav {
+    width: 20%;
+  }
+  
+  .wrapper {
+    display: inline-block;
+    padding-top: 20px;
+    padding-left: 38px;
+    width: 100%;
+  }
+  
+  .footerLeft {
+    position: relative;
+    width: 70%;
+    float: left;
+  }
+  
+  .generalInformation {
+    display: inline-block;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .footerMiddle {
+    position: relative;
+    width: 15%;
+    float: left;
+  }
+  
+  ul.information {
+    padding: 0;
+    list-style: none;
+  }
+  
+  .footerRight {
+    position: relative;
+    width: 15%;
+    float: right;
+  }
+  
+  ul.resources {
+    padding: 0;
+    list-style: none;
+  }
