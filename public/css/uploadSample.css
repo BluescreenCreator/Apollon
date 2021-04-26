@@ -40,24 +40,64 @@
   header {
     width: 100%;
     padding-top: 20px;
-  }
-  
-  .containerHeader {
+}
+
+.containerHeader {
     float: left;
     width: 60%;
-  }
-  
-  .divlogo {
+}
+
+.divlogo {
     position: relative;
     float: left;
     width: 10%;
     padding-right: 100px;
-  }
-  
-  .icons {
+}
+
+.divIcons {
+    float: right;
+    position: relative;
+    padding-right: 20px;
+    text-align: right;
+}
+
+.icons {
     padding-right: 20px;
     transform: scale(0.7, 0.7);
-  }
+}
+
+nav {
+    display: inline-block;
+    position: relative;
+    justify-content: left;
+    width: 80%;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    padding-left: 20px;
+    padding-top: 33px;
+    padding-right: 20px;
+    position: relative;
+}
+
+nav ul li a {
+    font-family: 'Raleway';
+    color: var(--colorText);
+    text-decoration: none;
+    font-size: var(--p);
+}
+
+nav ul li a:hover {
+  color: var(--colorAccent);
+}
+
   
   /* CSS für Footer*/
   
@@ -129,6 +169,7 @@
     display: inline-block;
     position: absolute;
     z-index: 1;
+    width: 100%;
   }
   
   .content h1 {
@@ -157,7 +198,7 @@
   }
   
   .content #png {
-    width: 40%;
+    width: 33%;
     position: relative;
     margin-left: 400px;
     margin-top: 40px;
@@ -254,4 +295,13 @@
       height: 60px;
       z-index: 999;
   }
+
+  .btnUpload {
+    font-size: var(--p);
+    color: #fff;
+    text-decoration: none;
+  }
   
+  .gesamt {
+    padding-left: 250px;
+  }
