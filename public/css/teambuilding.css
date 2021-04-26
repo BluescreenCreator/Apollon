@@ -266,6 +266,8 @@ hr {
     margin-left: 15px;
     margin-top: auto;
     margin-bottom: auto;
+    height: 30px;
+    width: 30px;
 }
 
 .gridp {
