@@ -56,6 +56,10 @@ header {
     width: 60%;
 }
 
+a:hover{
+    color: #FFB100;
+}
+
 .divlogo {
     position: relative;
     float: left;
