@@ -180,6 +180,7 @@ input {
   padding: 15px;
   padding-left: 40px;
   margin: 20px;
+  width: 70%;
 }
 
 input[type=checkbox] {
