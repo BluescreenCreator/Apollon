@@ -44,6 +44,7 @@ p {
     color: var(--colorText);
 }
 
+
 /*CSS für Header*/
 
 header {
@@ -56,9 +57,6 @@ header {
     width: 60%;
 }
 
-a:hover{
-    color: #FFB100;
-}
 
 .divlogo {
     position: relative;
@@ -107,101 +105,108 @@ nav ul li a {
     font-size: var(--p);
 }
 
-/*CSS für Hauptteil*/
-.banner{
-    width: 100%;
-    margin-top: 4%;
+nav ul li a:hover {
+    color: var(--colorAccent);
+  }
+
+/*CSS für Body*/
+.content {
+    margin-top: 100px;
+    margin-left: 41px;
 }
 
+.team-name{
+    color: var(--colorAccent);
+}
 
-/*Link-Bilder*/
-.picturesButtons{
+.members{
     display: inline-block;
-    width: 100%;
 }
 
-.pictureTeams{
-    float: left;
-    padding-top: 7%;
-    padding-left: 10%;
+img{
+   height: 70px;
 }
 
-.pictureLikedSamples{
-    float: right;
-    padding-top: 7%;
-    padding-right: 10%;
-}
-
-.pictureButton {
-    width: 482px;
-    height: 341px;
-    display: inline;
+.addArtistsButton {
     cursor: pointer;
-}
-
-
-
-
-.pictureButtonText{
-    z-index: 10;
-    display: inline;
-    width: 100%;
-    cursor:pointer;
+    background-color: var(--colorText);
+    height: 70px;
+    line-height: 30px;  
+    width: 70px;  
+    border-radius: 50%;
     text-align: center;
-    margin-bottom: 32%;
-    margin-top: 0%;
+    border-style: none;
+    margin-left: 30px;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
-#teams{
-    display: none;
-    padding-left: 0%;
-    padding-right: 0%;
+.plusIcon {
     position: absolute;
-    top: 107%;
-    left: -30%;
-    width: 100%;
-    text-align: center;
+    z-index: 100;
+    padding-top: 12px;
+    margin-left: -60px;
+    height: 50px;
+}
+
+
+button {
+    cursor: pointer;
+    font-family: 'Lato';
+    font-size: var(--p);
+    color: #fff;
+    position: relative;
+    border: 10px solid transparent;
+    border-radius: 21px;
+    width: 200px;
+    height: 70px;
+    background: linear-gradient(to right, #ffb100, #ff1845);
+    background-clip: padding-box;
+    margin-left: -12px;
+    margin-top: 10px;
+    font-size: var(--p);
+}
+
+button a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.uploadSymbol{
+    height: 25px;
+    padding-top: 5px;
+    float: right;
+    margin-right: 12px;
+}
+
+.shareSamples{
+    display: block;
+}
+
+.share{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 0px;
+    float: left;
+    margin-left: 10px;
 }
 
 
 
-#likedSamples{
-    display: none;
-    position: absolute;
-    top: 107%;
-    left: 22%;
-}
 
-
-.pictureButton:hover{
-    filter:opacity(40%);
-}
-
-
-
-
-
-
-
-.popularArtists{
-    padding-top: 6%;
-    padding-left: 3%;
+.sharedSamples{
+    padding-top: 50px;
+    margin-bottom: 0px;
     margin-bottom: 1%;
+
 }
 
 .separationLine{
     background-color: #949494;
     width: 93%;
     height: 0.01px;
-    margin-left:  3%;
-    margin-top: 0%;
-    padding-top: 0%;
-}
-
-.topTen{
-    padding-top: 6%;
-    padding-left: 3%;
-    margin-bottom: 1%;
+    margin-left:  0px;
+    margin-top: 0px;
 }
 
 

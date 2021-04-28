@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap'); /*Lato regular*/
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap'); /*Raleway light*/
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap'); /*Raleway bold>*/
+
 /*CSS für Alles*/
 
 :root {
@@ -112,10 +116,10 @@ ul.resources {
 
 .whiteBox {
   width: 70%;
-  height: 63%;
-  margin-left: 260px;
+  height: auto;
+  margin-left: 17.3%;
   margin-top: 6%;
-  padding: 300px;
+  padding: 20%;
   box-sizing: border-box;
   border-radius: 21px;
   background: white;
@@ -125,28 +129,28 @@ ul.resources {
 
 .content {
   font-family: 'Lato';
-  margin-top: 130px;
-  margin-left: 100px;
+  margin-top: 8.5%;
+  margin-left: 7%;
   display: inline-block;
   position: absolute;
   z-index: 1;
 }
 
 .content h1 {
-  margin-left: 12px;
+  margin-left: 1.2%;
 }
 
 .content ul {
   list-style: none;
-  padding-left: 0px;
-  margin-left: 0px;
-  margin-top: 30px;
+  padding-left: 0%;
+  margin-left: 0.1%;
+  margin-top: 4%;
 }
 
 .content li {
   display: inline;
   position: relative;
-  padding: 15px;
+  padding: 1%;
 }
 
 .content .orange {
@@ -158,15 +162,15 @@ ul.resources {
 }
 
 .content img {
-  width: 30%;
+  width: 48%;
   position: relative;
-  margin-left: 500px;
-  margin-top: -45px;
+  margin-left: 67%;
+  margin-top: -3.8%;
 }
 
 .input-fields {
-  margin-top: 250px;
-  margin-left: 345px;
+  margin-top: 18%;
+  margin-left: 22.8%;
   z-index: 1;
   position: absolute;
 }
@@ -177,9 +181,10 @@ input {
   display: block;
   position: relative;
   font-size: 18px;
-  padding: 15px;
-  padding-left: 40px;
-  margin: 20px;
+  padding: 6%;
+  margin-top: 10%;
+  margin-left: 9%;
+  width: 114%;
 }
 
 #createAccountButton {
@@ -191,10 +196,10 @@ input {
     border-radius: 21px;
     background: linear-gradient(to right, #ffb100, #ff1845);
     background-clip: padding-box;
-    margin-top: 480px;
-    margin-left: 100px;
-    width: 300px;
-    height: 60px;
+    margin-top: 31.5%;
+    margin-left: 6.7%;
+    width: 19.8%;
+    height: 5.5%;
     z-index: 1;
 }
 
@@ -206,15 +211,15 @@ input {
   cursor: pointer;
   font-size: 16px;
   z-index: 1;
-  margin-top: 560px;
-  margin-left: 170px;
+  margin-top: 37%;
+  margin-left: 11.5%;
 }
 
 /* Header */
 
 header .tutorial p{
   float: right;
-  padding-right: 100px;
+  padding-right: 6.5%;
   font-size: var(--p);
 }
 
