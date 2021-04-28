@@ -193,7 +193,7 @@ input[type=checkbox] {
 }
 
 
-#createAccountButton {
+#loginButton {
     font-family: 'Lato';
     font-size: var(--p);
     color: #fff;
