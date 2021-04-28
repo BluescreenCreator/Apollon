@@ -114,7 +114,7 @@ nav ul li a {
     margin-top: 50px;
 }
 
-
+/*Link-Bilder*/
 .bilder-buttons{
     display: inline-block;
     width: 100%;
@@ -126,26 +126,56 @@ nav ul li a {
     padding-left: 130px;
 }
 
-.bild-teams:hover{
-    filter:opacity(40%);
-}
-
-
 .bild-liked-samples{
     float: right;
     padding-top: 100px;
     padding-right: 130px;
 }
 
-.bild-liked-samples:hover{
-    filter:opacity(40%);
-}
-
 .bild-buttons {
     width: 482px;
     height: 341px;
     display: inline;
+    cursor: pointer;
 }
+
+.bild-buttons-text{
+    z-index: 10;
+    display: inline;
+    width: 100%;
+    cursor:pointer;
+    text-align: center;
+    margin-bottom: 400px;
+    margin-top: 0px;
+}
+
+#teams{
+    display: none;
+    padding-left: 0px;
+    padding-right: 0px;
+    position: absolute;
+    top: 107%;
+    left: -380px;
+    width: 100%;
+    text-align: center;
+}
+
+
+
+#liked-samples{
+    display: none;
+    position: absolute;
+    top: 107%;
+    left: 280px;
+}
+
+
+.bild-buttons:hover{
+    filter:opacity(40%);
+}
+
+
+
 
 .Popular-Artists{
     padding-top: 100px;
