@@ -112,7 +112,7 @@ ul.resources {
 
 .whiteBox {
   width: 70%;
-  height: 63%;
+  height: auto;
   margin-left: 260px;
   margin-top: 6%;
   padding: 300px;
