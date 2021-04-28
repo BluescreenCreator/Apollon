@@ -109,8 +109,8 @@ nav ul li a:hover {
 /* Content */
 
 .content {
-    margin-top: 100px;
-    margin-left: 41px;
+    margin-top: 7.5%;
+    margin-left: 2.8%;
 }
 
 .content a {
@@ -123,8 +123,8 @@ nav ul li a:hover {
 
 .profileImages {
     display: inline-block;
-    margin-left: 230px;
-    margin-top: 10px;
+    margin-left: 15.5%;
+    margin-top: 0.57%;
     position: absolute;
 }
 
@@ -133,14 +133,14 @@ nav ul li a:hover {
 }
 
 .content #profile1 {
-    margin-top: -8px;
+    margin-top: -0.57%;
 }
 
 .teamSel {
     width: 57%;
     float: right;
-    margin-right: 183px;
-    margin-top: -5px;
+    margin-right: 12%;
+    margin-top: -0.4%;
 }
 
 /* Button */
@@ -152,12 +152,12 @@ button {
     position: relative;
     border: 10px solid transparent;
     border-radius: 21px;
-    width: 300px;
+    width: 21%;
     height: 70px;
     background: linear-gradient(to right, #ffb100, #ff1845);
     background-clip: padding-box;
-    margin-left: -12px;
-    margin-top: 20px;
+    margin-left: -1%;
+    margin-top: 1.7%;
     font-size: var(--p);
 }
 
