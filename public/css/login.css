@@ -204,7 +204,7 @@ input[type=checkbox] {
     background-clip: padding-box;
     margin-top: 480px;
     margin-left: 100px;
-    width: 300px;
+    width: 20%;
     height: 60px;
     z-index: 1;
 }
