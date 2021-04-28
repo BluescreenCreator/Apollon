@@ -142,8 +142,11 @@ img{
 }
 
 .plusIcon {
-    margin-left: -6px;
-    margin-top: -1px;
+    position: absolute;
+    z-index: 100;
+    padding-top: 12px;
+    margin-left: -60px;
+    height: 50px;
 }
 
 
@@ -191,14 +194,14 @@ button a {
 
 
 
-.shared-Samples{
+.sharedSamples{
     padding-top: 50px;
     margin-bottom: 0px;
     margin-bottom: 1%;
 
 }
 
-.separation-line{
+.separationLine{
     background-color: #949494;
     width: 93%;
     height: 0.01px;

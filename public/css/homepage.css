@@ -115,24 +115,24 @@ nav ul li a {
 
 
 /*Link-Bilder*/
-.bilder-buttons{
+.picturesButtons{
     display: inline-block;
     width: 100%;
 }
 
-.bild-teams{
+.pictureTeams{
     float: left;
     padding-top: 7%;
     padding-left: 10%;
 }
 
-.bild-liked-samples{
+.pictureLikedSamples{
     float: right;
     padding-top: 7%;
     padding-right: 10%;
 }
 
-.bild-buttons {
+.pictureButton {
     width: 482px;
     height: 341px;
     display: inline;
@@ -142,7 +142,7 @@ nav ul li a {
 
 
 
-.bild-buttons-text{
+.pictureButtonText{
     z-index: 10;
     display: inline;
     width: 100%;
@@ -165,7 +165,7 @@ nav ul li a {
 
 
 
-#liked-samples{
+#likedSamples{
     display: none;
     position: absolute;
     top: 107%;
@@ -173,7 +173,7 @@ nav ul li a {
 }
 
 
-.bild-buttons:hover{
+.pictureButton:hover{
     filter:opacity(40%);
 }
 
@@ -183,13 +183,13 @@ nav ul li a {
 
 
 
-.Popular-Artists{
+.popularArtists{
     padding-top: 6%;
     padding-left: 3%;
     margin-bottom: 1%;
 }
 
-.Trennlinie{
+.separationLine{
     background-color: #949494;
     width: 93%;
     height: 0.01px;
@@ -198,7 +198,7 @@ nav ul li a {
     padding-top: 0%;
 }
 
-.Top-Ten{
+.topTen{
     padding-top: 6%;
     padding-left: 3%;
     margin-bottom: 1%;
