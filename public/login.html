@@ -79,5 +79,26 @@
 
   <script src="auth.js" defer></script>
 
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-auth.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+
+    <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+    apiKey: "AIzaSyCAf1IK82QhYaxxK0mdbMjkSUnlb-gzxhc",
+    authDomain: "apollon-da74a.firebaseapp.com",
+    projectId: "apollon-da74a",
+    storageBucket: "apollon-da74a.appspot.com",
+    messagingSenderId: "864434871892",
+    appId: "1:864434871892:web:26bb2b258c0ad5805d17c1"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    </script>
 </body>
 </html>
