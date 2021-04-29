@@ -200,7 +200,7 @@ select {
     display: block;
     font-size: var(--p);
     color: var(--colorText);
-    width: 90%;
+    width: 95%;
     height: 30px;
     box-sizing: border-box;
     margin: 0;
@@ -223,7 +223,7 @@ button {
     font-family: 'Lato';
     font-size: var(--p);
     box-sizing: border-box;
-    width: 90%;
+    width: 95%;
     height: 30px;
 }
 
