@@ -109,6 +109,10 @@ nav ul li a {
 
 /*CSS für Hauptteil*/
 
+.banner {
+    width: 100%;
+}
+
 .wrapper {
     width: 100%;
     padding: 0 15px;
@@ -162,7 +166,6 @@ section {
     display: inline-block;
     height: auto;
     width: auto;
-    padding-bottom: 20px;
 }
 
 .rightTeaser {
@@ -192,15 +195,23 @@ section .teaser ul li {
     overflow: hidden;
 }
 
+.yourTeams {
+    width: 100%;
+    height: 36em;
+}
+
+.likedSamples {
+    width: 100%;
+    height: 36em;
+}
+
 /* Um Bilder vollständig und gleichgroß anzuzeigen */
 section .teaser ul li .yourTeams {
     width: 100%;
-    padding-top: 25px;
 }
 
 section .teaser ul li .likedSamples {
     width: 100%;
-    padding-top: 5px;
 }
 
 section .teaser ul li h3 {
