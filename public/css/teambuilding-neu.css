@@ -97,6 +97,10 @@ nav ul li a {
     font-size: var(--p);
 }
 
+.hoverHeaderItems:hover{
+    color: #ffb100;
+}
+
 #coloredHeaderItem{
     font-family: 'Raleway';
     color: var(--colorAccent);
