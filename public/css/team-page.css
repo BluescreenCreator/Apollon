@@ -44,6 +44,7 @@ p {
     color: var(--colorText);
 }
 
+
 /*CSS für Header*/
 
 header {
@@ -56,9 +57,6 @@ header {
     width: 60%;
 }
 
-a.linkHeader:hover{
-    color: #FFB100;
-}
 
 .divlogo {
     position: relative;
@@ -107,152 +105,111 @@ nav ul li a {
     font-size: var(--p);
 }
 
-/*CSS für Hauptteil*/
+nav ul li a:hover {
+    color: var(--colorAccent);
+  }
 
-.wrapper {
-    width: 100%;
-    padding: 0 15px;
-    margin: 0;
-    transform: scale(0.7);
+/*CSS für Body*/
+.content {
+    margin-top: 100px;
+    margin-left: 41px;
 }
 
+.team-name{
+    color: var(--colorAccent);
+}
+
+.members{
+    display: inline-block;
+}
+
+img{
+   height: 70px;
+}
+
+.addArtistsButton {
+    cursor: pointer;
+    background-color: var(--colorText);
+    height: 70px;
+    line-height: 30px;  
+    width: 70px;  
+    border-radius: 50%;
+    text-align: center;
+    border-style: none;
+    margin-left: 30px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.plusIcon {
+    position: absolute;
+    z-index: 100;
+    padding-top: 12px;
+    margin-left: -60px;
+    height: 50px;
+}
+
+
 button {
-    font-family: 'Raleway';
-    font-weight: lighter;
-    font-size: var(--h4);
+    cursor: pointer;
+    font-family: 'Lato';
+    font-size: var(--p);
     color: #fff;
     position: relative;
     border: 10px solid transparent;
     border-radius: 21px;
+    width: 200px;
+    height: 70px;
     background: linear-gradient(to right, #ffb100, #ff1845);
     background-clip: padding-box;
-    z-index: 1;
+    margin-left: -12px;
+    margin-top: 10px;
+    font-size: var(--p);
 }
 
-button::after {
-    position: absolute;
-    background: linear-gradient(to right, #ffb100, #ff1845);
-    content: '';
-    border-radius: 21px;
-    z-index: 1;
-}
-
-button:hover {
-    color: var(--background-color);
-    font-size: var(--h4);
-    font-weight: bold;
-}
-
-.buttonSmall {
-    height: 70px;
-    width: 220px;
-}
-
-.link {
-    color: #fff;
+button a {
     text-decoration: none;
+    color: #fff;
 }
 
-section {
-    background: var(--background-color);
-    display: inline-block;
-}
-
-.leftTeaser {
-    display: inline-block;
-    height: auto;
-    width: auto;
-    padding-bottom: 20px;
-}
-
-.rightTeaser {
-    display: inline-block;
-    height: auto;
-    width: auto;    
-}
-
-figure {
-    text-align: center;
-}
-
-/* Positionierung der Teaser */ 
-section .teaser ul {
-    display: inline-block;
-    list-style: none;
-    margin: 0 -10 px;
-    padding: 20px 0;
-}
-
-
-/* Um Teaser anzupassen */
-section .teaser ul li {
-    width: 48%;
-    display: inline-block;
-    position: relative;
-    overflow: hidden;
-}
-
-/* Um Bilder vollständig und gleichgroß anzuzeigen */
-section .teaser ul li .yourTeams {
-    width: 100%;
-    padding-top: 25px;
-}
-
-section .teaser ul li .likedSamples {
-    width: 100%;
+.uploadSymbol{
+    height: 25px;
     padding-top: 5px;
+    float: right;
+    margin-right: 12px;
 }
 
-section .teaser ul li h3 {
-    width: 80%;
-    margin-top: 200px;
-    margin-left: 80px;
-    margin-right: 80px;
-    font-family: 'Raleway';
-    font-size: var(--h3);
-    color: #fff;
+.shareSamples{
+    display: block;
 }
 
-section .teaser ul li .text{
-    color: #fff;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transform: scale(0.97);
+.share{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 0px;
+    float: left;
+    margin-left: 10px;
 }
 
-/* Hintergrundfarbe bei hover über Teaser */
-section .teaser ul li:hover .text {
-    width: auto;
-    vertical-align: auto;
-    bottom: 0;
-    background: rgba(146, 146, 146, 0.7);
+
+
+
+.sharedSamples{
+    padding-top: 50px;
+    margin-bottom: 0px;
+    margin-bottom: 1%;
+
 }
 
-/*Annas Code*/
-
-.Popular-Artists{
-    padding-top: 100px;
-    padding-left: 40px;
-    margin-bottom: 12px;
-}
-
-.Trennlinie{
+.separationLine{
     background-color: #949494;
     width: 93%;
-    height: 0.02px;
-    margin-left:  40px;
+    height: 0.01px;
+    margin-left:  0px;
     margin-top: 0px;
-    padding-top: 0px;
-    
 }
 
-.Top-Ten{
-    padding-top: 100px;
-    padding-left: 40px;
-    margin-bottom: 12px;
-}
+
 
 /*CSS für Footer*/
 
@@ -302,5 +259,3 @@ ul.resources {
     padding: 0;
     list-style: none;
 }
-
-
