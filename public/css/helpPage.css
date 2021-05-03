@@ -19,6 +19,11 @@ body {
     background-color: var(--background-color);
 }
 
+h2 {
+    font-family: 'Raleway';
+    font-size: var(--h2);
+}
+
 h3 {
     font-family: 'Raleway';
     font-size: var(--h3);
@@ -99,6 +104,57 @@ nav ul li a {
 
 .hoverHeaderItems:hover{
     color: #ffb100;
+}
+
+/*CSS für Content*/
+.pictureBanner {
+    width: 100%;
+    z-index: -1;
+}
+
+.pictureIcon {
+    position: absolute;
+    top: 35%;
+    left: 25%;
+    width: 20%;
+    height: auto;
+    z-index: 1;
+}
+
+.container {
+    position: absolute;
+    top: 40%;
+    left: 56%;
+    z-index: 1;
+}
+
+.container h2 {
+    color: #292929;
+}
+
+.container h3 {
+    color: white;
+}
+
+.whiteBox {
+    width: 70%;
+    height: auto;
+    margin-left: 13%;
+    margin-top: -90px;
+    padding: 20%;
+    box-sizing: border-box;
+    border-radius: 21px;
+    background: white;
+    position: relative;
+    z-index: 1;
+}
+
+.whiteBoxHeading {
+    color: #292929;
+    position: absolute;
+    top: 180%;
+    left: 26%;
+    z-index: 100;
 }
 
 /*CSS für Footer*/
