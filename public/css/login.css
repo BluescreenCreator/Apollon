@@ -63,8 +63,6 @@ header {
   transform: scale(0.7, 0.7);
 }
 
-<<<<<<< HEAD
-
 header .tutorial p{
   float: right;
   padding-right: 6.5%;
@@ -79,7 +77,7 @@ header .tutorial p a{
 header .tutorial p a:hover{
   color: var(--colorAccent);
 }
-=======
+
 footer{
   margin-left: 3%;
   }
@@ -143,7 +141,6 @@ footer{
   .rights{
       font-size: 12px;
   }
->>>>>>> 55d9e0cd3c17de95186c0b24eba0dd494a3efa76
 
 /* Weiße Box */
 

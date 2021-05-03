@@ -306,7 +306,14 @@ header .login p{
 
 
 /* CSS für Footer*/
-
+footer{
+    margin-left: 3%;
+    }
+    
+    footer p{
+        font-size: 16px;
+    }
+    
 footer nav {
   width: 20%;
 }
