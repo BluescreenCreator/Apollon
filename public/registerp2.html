@@ -6,422 +6,84 @@
     <link rel="shortcut icon" type="image/png" href="https://animaproject.s3.amazonaws.com/home/favicon.png" />
     <meta name="og:type" content="website" />
     <meta name="twitter:card" content="photo" />
-    <link rel="stylesheet" type="text/css" href="registerp2.css" />
-    <style>
-      @import url("https://fonts.googleapis.com/css?family=Raleway:300,700,500,600|Lato:400,300,700|Noto+Sans:700");
+    <link rel="stylesheet" type="text/css" href="css/register2.css" />
+    
+<body>
 
-      @font-face {
-        font-family: "Arial-Regular";
-        font-style: normal;
-        font-weight: 400;
-        src: url("https://anima-uploads.s3.amazonaws.com/5c58c99ae21217000c4e869b/arial.otf") format("opentype");
-      }
-
-      @font-face {
-        font-family: "SegoeUI-Regular";
-        font-style: normal;
-        font-weight: 400;
-        src: url("https://anima-uploads.s3.amazonaws.com/5b1e8d8e336c4b0009507857/segoeui.ttf") format("truetype");
-      }
-
-      .component-wrapper a,
-      .screen a {
-        text-decoration: none;
-        display: contents;
-      }
-
-      .full-width-a {
-        width: 100%;
-      }
-
-      .full-height-a {
-        height: 100%;
-      }
-
-      .screen textarea:focus,
-      .screen input:focus {
-        outline: none;
-      }
-
-      .screen *,
-      .component-wrapper * {
-        box-sizing: border-box;
-        -webkit-font-smoothing: antialiased;
-      }
-
-      .screen div {
-        -webkit-text-size-adjust: none;
-      }
-
-      .container-center-vertical,
-      .container-center-horizontal {
-        pointer-events: none;
-        display: flex;
-        flex-direction: row;
-        padding: 0;
-        margin: 0;
-      }
-
-      .container-center-vertical {
-        align-items: center;
-        height: 100%;
-      }
-
-      .container-center-horizontal {
-        justify-content: center;
-        width: 100%;
-      }
-
-      .container-center-vertical > *,
-      .container-center-horizontal > * {
-        pointer-events: auto;
-        flex-shrink: 0;
-      }
-
-      .component-wrapper,
-      .screen {
-        overflow-wrap: break-word;
-        word-wrap: break-word;
-        word-break: break-all;
-        word-break: break-word;
-      }
-
-      .auto-animated div {
-        opacity: 0;
-        position: absolute;
-        --z-index: -1;
-      }
-
-      .auto-animated .container-center-vertical,
-      .auto-animated .container-center-horizontal {
-        opacity: 1;
-      }
-
-      .overlay {
-        position: absolute;
-        opacity: 0;
-        display: none;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        position: fixed;
-      }
-
-      .animate-appear {
-        opacity: 0;
-        display: block;
-        animation: reveal 0.3s ease-in-out 1 normal forwards;
-      }
-
-      .animate-disappear {
-        opacity: 1;
-        display: block;
-        animation: reveal 0.3s ease-in-out 1 reverse forwards;
-      }
-
-      .animate-nodelay {
-        animation-delay: 0s;
-      }
-
-      @keyframes reveal {
-        from {
-          opacity: 0;
-        }
-        to {
-          opacity: 1;
-        }
-      }
-      .align-self-flex-start {
-        align-self: flex-start;
-      }
-      .align-self-flex-end {
-        align-self: flex-end;
-      }
-      .align-self-flex-center {
-        align-self: center;
-      }
-      .valign-text-middle {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-      }
-      .valign-text-bottom {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-      }
-      input:focus {
-        outline: none;
-      }
-      .component-wrapper,
-      .component-wrapper * {
-        pointer-events: none;
-      }
-
-      .component-wrapper a *,
-      .component-wrapper a,
-      .component-wrapper input,
-      .component-wrapper video,
-      .component-wrapper iframe,
-      .listeners-active,
-      .listeners-active * {
-        pointer-events: auto;
-      }
-
-      .hidden,
-      .hidden * {
-        visibility: hidden;
-        pointer-events: none;
-      }
-
-      .smart-layers-pointers,
-      .smart-layers-pointers * {
-        pointer-events: auto;
-        visibility: visible;
-      }
-
-      .component-wrapper.not-ready,
-      .component-wrapper.not-ready * {
-        visibility: hidden !important;
-      }
-
-      .listeners-active-click,
-      .listeners-active-click * {
-        cursor: pointer;
-      }
-
-      @import url("https://fonts.googleapis.com/css?family=Raleway:300,700,500,600|Lato:400,300,700|Noto+Sans:700");
-
-      @font-face {
-        font-family: "Arial-Regular";
-        font-style: normal;
-        font-weight: 400;
-        src: url("https://anima-uploads.s3.amazonaws.com/5c58c99ae21217000c4e869b/arial.otf") format("opentype");
-      }
-
-      @font-face {
-        font-family: "SegoeUI-Regular";
-        font-style: normal;
-        font-weight: 400;
-        src: url("https://anima-uploads.s3.amazonaws.com/5b1e8d8e336c4b0009507857/segoeui.ttf") format("truetype");
-      }
-      * {
-        box-sizing: border-box;
-      }
-      .border-1px-dove-gray {
-        border: 1px solid var(--dove-gray);
-      }
-      .border-1px-mountain-mist {
-        border: 1px solid var(--mountain-mist);
-      }
-      .border-1px-selective-yellow {
-        border: 1px solid var(--selective-yellow);
-      }
-      .border-1px-white {
-        border: 1px solid var(--white);
-      }
-      .border-2px-mountain-mist {
-        border: 2px solid var(--mountain-mist);
-      }
-      .border-2px-ship-gray {
-        border: 2px solid var(--ship-gray);
-      }
-      .border-2px-white {
-        border: 2px solid var(--white);
-      }
-      .border-3px-mountain-mist {
-        border: 3px solid var(--mountain-mist);
-      }
-      .border-3px-white {
-        border: 3px solid var(--white);
-      }
-      .border-class-1 {
-        border: 2px solid rgba(0, 0, 0, 1);
-      }
-      .lato-light-white-20px {
-        color: var(--white);
-        font-family: "Lato", Helvetica;
-        font-size: 20px;
-        font-style: normal;
-        font-weight: 300;
-      }
-      .lato-normal-mountain-mist-16px {
-        color: var(--mountain-mist);
-        font-family: "Lato", Helvetica;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 400;
-      }
-      .lato-normal-mountain-mist-18px {
-        color: var(--mountain-mist);
-        font-family: "Lato", Helvetica;
-        font-size: 18px;
-        font-style: normal;
-        font-weight: 400;
-      }
-      .lato-normal-ship-gray-18px {
-        color: var(--ship-gray);
-        font-family: "Lato", Helvetica;
-        font-size: 18px;
-        font-style: normal;
-        font-weight: 400;
-      }
-      .lato-normal-white-18px {
-        color: var(--white);
-        font-family: "Lato", Helvetica;
-        font-size: 18px;
-        font-style: normal;
-        font-weight: 400;
-      }
-      .raleway-bold-mountain-mist-24px {
-        color: var(--mountain-mist);
-        font-family: "Raleway", Helvetica;
-        font-size: 24px;
-        font-style: normal;
-        font-weight: 700;
-      }
-      .raleway-bold-mountain-mist-32px {
-        color: var(--mountain-mist);
-        font-family: "Raleway", Helvetica;
-        font-size: 32px;
-        font-style: normal;
-        font-weight: 700;
-      }
-      .raleway-light-mountain-mist-24px {
-        color: var(--mountain-mist);
-        font-family: "Raleway", Helvetica;
-        font-size: 24px;
-        font-style: normal;
-        font-weight: 300;
-      }
-      .raleway-medium-white-24px {
-        color: var(--white);
-        font-family: "Raleway", Helvetica;
-        font-size: 24px;
-        font-style: normal;
-        font-weight: 500;
-      }
-      .raleway-semi-bold-mountain-mist-20px {
-        color: var(--mountain-mist);
-        font-family: "Raleway", Helvetica;
-        font-size: 20px;
-        font-style: normal;
-        font-weight: 600;
-      }
-      :root {
-        --dove-gray: rgba(112, 112, 112, 1);
-        --international-orange: rgba(255, 87, 0, 1);
-        --mountain-mist: rgba(148, 148, 148, 1);
-        --pizazz: rgba(255, 147, 0, 1);
-        --selective-yellow: rgba(255, 177, 0, 1);
-        --shark: rgba(41, 41, 41, 1);
-        --ship-gray: rgba(62, 62, 62, 1);
-        --torch-red: rgba(255, 0, 60, 1);
-        --vermilion: rgba(255, 57, 0, 1);
-        --white: rgba(255, 255, 255, 1);
-      }
-    </style>
-    <meta name="author" content="AnimaApp.com - Design to code, Automated." />
-  </head>
-  <body style="margin: 0; background: rgba(41, 41, 41, 1)">
-    <input type="hidden" id="anPageName" name="page" value="register-part-2" />
-    <div class="container-center-horizontal">
-      <div class="register-part-2 screen">
-        <div class="flex-row-C61RwL">
-          <a href="landing-page.html">
-            <div class="gruppe-107-dXBp89">
-              <div class="gruppe-104-l4Yt9Y">
-                <div class="rechteck-61-lRETi3"></div>
-                <div class="rechteck-62-lRETi3"></div>
-                <div class="rechteck-63-lRETi3"></div>
-                <div class="rechteck-64-lRETi3"></div>
-                <div class="rechteck-65-lRETi3"></div>
-                <div class="rechteck-66-lRETi3"></div>
-                <div class="rechteck-67-lRETi3"></div>
-              </div>
-              <div class="gruppe-105-l4Yt9Y"></div>
-              <div class="apollon-l4Yt9Y">
-                <div class="gruppe-106-deNzfo">
-                  <img class="pfad-137-p4GX2a" src="img/pfad-137@1x.png" />
-                  <img class="pfad-138-p4GX2a" src="img/pfad-138@1x.png" />
-                  <img class="pfad-139-p4GX2a" src="img/pfad-139@1x.png" />
-                  <img class="pfad-140-p4GX2a" src="img/pfad-140@1x.png" />
-                  <img class="pfad-141-p4GX2a" src="img/pfad-141@1x.png" />
-                  <img class="pfad-142-p4GX2a" src="img/pfad-142@1x.png" />
-                  <img class="pfad-143-p4GX2a" src="img/pfad-135@1x.png" />
-                </div>
-              </div></div
-          ></a>
-          <a href="help.html"><div class="watch-the-tutorial-dXBp89">Watch the Tutorial</div></a>
-        </div>
-        <div class="overlap-group-C61RwL">
-          <div class="rechteck-42-4eduM0 border-1px-dove-gray"></div>
-          <div class="sign-up-4eduM0">
-            <div class="input-hDhaEe border-2px-ship-gray">
-              <div class="value-LACeSG lato-normal-ship-gray-18px">Write something About yourself</div>
-            </div>
-            <div class="input-xxEqrB border-2px-ship-gray">
-              <div class="value-ON0IfU lato-normal-ship-gray-18px">Wich Instrument you play</div>
-            </div>
-            <div class="input-SOEMHW border-2px-ship-gray">
-              <div class="value-5KyQ89 lato-normal-ship-gray-18px">Your Music Genre</div>
-            </div>
-            <div class="new-user-tagh6-hDhaEe">
-              By giving us more Information About yourself, other Artists have it easier when they want to find you.
-            </div>
-            <div class="title-tagh4-hDhaEe">Give us a bit more Information</div>
-          </div>
-          <div class="gruppe-53-4eduM0">
-            <img class="icon-material-file-upload-vxN4RB" src="img/icon-material-file-upload@1x.png" />
-            <div class="upload-profile-picture-vxN4RB lato-normal-white-18px">Upload Profile Picture</div>
-          </div>
-          <a href="myprofile.html">
-            <div class="gruppe-47-4eduM0">
-              <div class="finish-setting-up-your-account-QBC2d0">Finish Setting Up your Account</div>
-            </div></a
-          >
-        </div>
-        <div class="overlap-group1-C61RwL">
-          <img class="linie-22-RH0WJ5" src="img/linie-22@1x.png" />
-          <div class="footer-RH0WJ5">
-            <div class="background-stylestyle3-c9dZAx"></div>
-            <div class="description-stylestyle3tagp-c9dZAx lato-normal-mountain-mist-16px">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua.
-            </div>
-            <div class="company-stylestyle3tagh4-c9dZAx raleway-bold-mountain-mist-32px">Apollon</div>
-            <div class="circle-button-c9dZAx">
-              <div class="icon-afqeDi">
-                <div class="icon-W98mKJ">
-                  <img class="path-ej8DRf" src="img/path-4@1x.png" />
-                  <img class="path-ymv1cy" src="img/path-1@1x.png" />
-                </div>
-              </div>
-            </div>
-            <div class="circle-button-9troxk">
-              <div class="icon-kSohgX">
-                <div class="icon-91LFbL"><img class="path-qk1QJ7" src="img/path-6@1x.png" /></div>
-              </div>
-            </div>
-            <div class="circle-button-eqTTfx">
-              <div class="icon-AKyo9F">
-                <div class="icon-momntf"><img class="path-RYMGO5" src="img/path-3@1x.png" /></div>
-              </div>
-            </div>
-            <div class="product-stylestyle3taguil-c9dZAx lato-normal-mountain-mist-18px">Concact Us</div>
-            <div class="product-stylestyle3taguil-9troxk lato-normal-mountain-mist-18px">Terms of Service</div>
-            <div class="product-stylestyle3taguil-eqTTfx lato-normal-mountain-mist-18px">Privacy Policy</div>
-            <div class="products-stylestyle3tagh5-c9dZAx raleway-bold-mountain-mist-24px">Information</div>
-            <div class="resource-stylestyle3taguil-c9dZAx lato-normal-mountain-mist-18px">FAQs</div>
-            <div class="resource-stylestyle3taguil-9troxk lato-normal-mountain-mist-18px">Videos</div>
-            <div class="resource-stylestyle3taguil-eqTTfx lato-normal-mountain-mist-18px">News</div>
-            <div class="resources-stylestyle3tagh5-c9dZAx raleway-bold-mountain-mist-24px">Resources</div>
-            <div class="product-stylestyle3taguil-BIs2Os raleway-semi-bold-mountain-mist-20px">
-              © Apollon 2021&nbsp;&nbsp;All Rights Reserved.
-            </div>
-          </div>
-        </div>
-      </div>
+  <header>
+    <div class="divlogo">
+        <img src="images/Logo.png" class="icons">
     </div>
-  </body>
+
+    <div class="tutorial">
+        <p><a href="#">WATCH OUR TUTORIAL</a></p>   
+    </div>
+
+</header>
+  
+<div class="content">
+  <h1>Give us a bit more information</h1>
+<ul>
+  <li>By giving us more information about yourself, other artists have it easier when they want to find you.</li>
+</ul>
+
+<a href="#"><img src="images/uploadProfilePic.png" alt=""></a>
+
+</div>
+
+<div class="input-fields">
+   <input id="musicGenre" type="name" placeholder="your music genre" value="">
+   <input id="instrument" type="name" placeholder="your instrument" value="">
+   <textarea name="moreInfos" id="moreInfos" cols="30" rows="10" placeholder="Write something about yourself"></textarea>
+</div>
+
+  <a href="#"><button id="settingUpAccount">Finish setting up your account</button></a>
+
+<div class="whiteBox"></div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+<footer>
+  <div class="wrapper2">
+      <div class="footerLeft">
+          <ul class="generalInformation">
+              <li><h3>Apollon</h3></li>
+                  <li><p>Lorem ipsum dolor sit amet, consectetur</p></li>
+                  <li><p>adipiscing elit, sed do eiusmod tempor</p></li>
+                  <li><p>incididunt ut labore et dolore magna aliqua.</p></li>
+                  <li><img src="images/social_media_icons.png"></li>
+                  <li><p class="rights">© Apollon 2021  All Rights Reserved.</p></li>
+          </ul>
+      </div>
+      <div class="footerMiddle">
+          <h4>Information</h4>
+              <ul class="information">
+                  <li><p>Privacy policy</p></li>
+                  <li><p>Terms of service</p></li>
+                  <li><p>Contact us</p></li>
+              </ul>
+      </div>
+      <div class="footerRight">        
+          <h4>Resources</h4>
+              <ul class="resources">
+                  <li><p>News</p></li>
+                  <li><p>Videos</p></li>
+                  <li><p>FAQ's</p></li>
+              </ul>
+      </div>
+  </div>
+</footer>   
+
+</body>
+    
+
 </html>
