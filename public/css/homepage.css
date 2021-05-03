@@ -107,10 +107,12 @@ nav ul li a {
     font-size: var(--p);
 }
 
+
 /*CSS für Hauptteil*/
 
-.banner {
+.banner{
     width: 100%;
+    margin-top: 4%;
 }
 
 .wrapper {
@@ -207,11 +209,17 @@ section .teaser ul li {
 
 /* Um Bilder vollständig und gleichgroß anzuzeigen */
 section .teaser ul li .yourTeams {
-    width: 100%;
+    width: 482px;
+    height: 341px;
+    display: inline;
+    cursor: pointer;
 }
 
 section .teaser ul li .likedSamples {
-    width: 100%;
+    width: 482px;
+    height: 341px;
+    display: inline;
+    cursor: pointer;
 }
 
 section .teaser ul li h3 {
@@ -265,6 +273,8 @@ section .teaser ul li:hover .text {
     margin-bottom: 12px;
 }
 
+
+
 /*CSS für Footer*/
 
 footer nav {
@@ -313,5 +323,3 @@ ul.resources {
     padding: 0;
     list-style: none;
 }
-
-
