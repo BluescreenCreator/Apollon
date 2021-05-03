@@ -112,12 +112,107 @@ nav ul li a {
 
 .banner{
     width: 100%;
-    margin-top: 4%;
+    margin-top: 2%;
+}
+
+.wrapper {
+    width: 100%;
+    padding: 0 15px;
+    margin: 0;
+    transform: scale(0.7);
+}
+
+.link {
+    color: #fff;
+    text-decoration: none;
+}
+
+section {
+    background: var(--background-color);
+    display: inline-block;
+    width: 100%;
+}
+
+.leftTeaser {
+    display: inline-block;
+    height: auto;
+    width: auto;
+}
+
+.rightTeaser {
+    display: inline-block;
+    height: auto;
+    width: auto;    
+}
+
+figure {
+    text-align: center;
+}
+
+/* Positionierung der Teaser */ 
+section .teaser ul {
+    display: inline-block;
+    position: center;
+    list-style: none;
+    margin: 0 -10 px;
+    padding: 20px 0;
 }
 
 
+/* Um Teaser anzupassen */
+section .teaser ul li {
+    width: 48%;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+}
+
+
+/* Um Bilder vollständig und gleichgroß anzuzeigen */
+section .teaser ul li .yourTeams {
+    width: 502px;
+    height: 361px;
+    display: inline;
+    cursor: pointer;
+}
+
+section .teaser ul li .likedSamples {
+    width: 502px;
+    height: 361px;
+    display: inline;
+    cursor: pointer;
+}
+
+section .teaser ul li h3 {
+    width: 80%;
+    margin-top: 200px;
+    margin-left: 80px;
+    margin-right: 80px;
+    font-family: 'Raleway';
+    font-size: var(--h3);
+    color: #fff;
+}
+
+section .teaser ul li .text{
+    color: #fff;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transform: scale(0.97);
+}
+
+/* Hintergrundfarbe bei hover über Teaser */
+section .teaser ul li:hover .text {
+    width: 502px;
+    height: 361px;
+    text-align: center;
+    bottom: 0;
+    background: rgba(146, 146, 146, 0.7);
+}
+
 /*Link-Bilder*/
-.bilder-buttons{
+/*.bilder-buttons{
     display: inline-block;
     width: 100%;
 }
@@ -140,8 +235,6 @@ nav ul li a {
     display: inline;
     cursor: pointer;
 }
-
-
 
 
 .bild-buttons-text{
@@ -177,7 +270,7 @@ nav ul li a {
 
 .bild-buttons:hover{
     filter:opacity(40%);
-}
+}*/
 
 /*Annas Code*/
 
