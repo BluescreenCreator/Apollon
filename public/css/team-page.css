@@ -123,7 +123,7 @@ nav ul li a:hover {
     display: inline-block;
 }
 
-img{
+.profilePictures{
    height: 70px;
 }
 
@@ -142,6 +142,7 @@ img{
 }
 
 .plusIcon {
+    cursor:pointer;
     position: absolute;
     z-index: 100;
     padding-top: 12px;
@@ -212,6 +213,14 @@ button a {
 
 
 /*CSS für Footer*/
+footer{
+margin-left: 3%;
+}
+
+footer p{
+    font-size: 16px;
+}
+
 
 footer nav {
     width: 20%;
@@ -258,4 +267,12 @@ ul.information {
 ul.resources {
     padding: 0;
     list-style: none;
+}
+
+.generalInformation{
+    line-height: 13px;
+}
+
+.rights{
+    font-size: 12px;
 }

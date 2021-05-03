@@ -63,6 +63,7 @@ header {
   transform: scale(0.7, 0.7);
 }
 
+<<<<<<< HEAD
 
 header .tutorial p{
   float: right;
@@ -78,6 +79,71 @@ header .tutorial p a{
 header .tutorial p a:hover{
   color: var(--colorAccent);
 }
+=======
+footer{
+  margin-left: 3%;
+  }
+  
+  footer p{
+      font-size: 16px;
+  }
+  
+  
+  footer nav {
+      width: 20%;
+  }
+  
+  .wrapper {
+      display: inline-block;
+      padding-top: 20px;
+      padding-left: 38px;
+      width: 100%;
+  }
+  
+  .footerLeft {
+      position: relative;
+      width: 70%;
+      float: left;
+  }
+  
+  .generalInformation {
+      display: inline-block;
+      position: relative;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+  }
+  
+  .footerMiddle {
+      position: relative;
+      width: 15%;
+      float: left;
+  }
+  
+  ul.information {
+      padding: 0;
+      list-style: none;
+  }
+  
+  .footerRight {
+      position: relative;
+      width: 15%;
+      float: right;
+  }
+  
+  ul.resources {
+      padding: 0;
+      list-style: none;
+  }
+  
+  .generalInformation{
+      line-height: 13px;
+  }
+  
+  .rights{
+      font-size: 12px;
+  }
+>>>>>>> 55d9e0cd3c17de95186c0b24eba0dd494a3efa76
 
 /* Weiße Box */
 
