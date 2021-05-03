@@ -213,6 +213,10 @@ button a {
 
 
 /*CSS für Footer*/
+footer p{
+    font-size: 16px;
+}
+
 
 footer nav {
     width: 20%;
@@ -259,4 +263,12 @@ ul.information {
 ul.resources {
     padding: 0;
     list-style: none;
+}
+
+.generalInformation{
+    line-height: 13px;
+}
+
+.rights{
+    font-size: 12px;
 }
