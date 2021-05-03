@@ -109,6 +109,12 @@ nav ul li a {
 }
 
 /*CSS für Content*/
+
+.content {
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
 input {
     background-color: var(--background-color);
     border-style: solid;
