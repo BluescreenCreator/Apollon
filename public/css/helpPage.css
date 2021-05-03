@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap'); /*Lato regular*/
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap'); /*Raleway light*/
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap'); /*Raleway bold>*/
+
+/*CSS für Alles*/
+
+:root {
+    --background-color: #292929;
+    --colorText: #929292;
+    --colorAccent: #ffb100;
+    --p: 18px;
+    --h4: 24px;
+    --h3: 32px;
+    --h2: 42px;
+    --h1: 55px;
+}
+
+body {
+    background-color: var(--background-color);
+}
+
+h2 {
+    font-family: 'Raleway';
+    font-size: var(--h2);
+}
+
+h3 {
+    font-family: 'Raleway';
+    font-size: var(--h3);
+    color: var(--colorText);
+}
+
+h4 {
+    font-family: 'Raleway';
+    font-weight: bold;
+    font-size: var(--h4);
+    color: var(--colorText);
+}
+
+p {
+    font-family: 'Lato';
+    font-size: var(--p);
+    color: var(--colorText);
+}
+
+/*CSS für Header*/
+
+header {
+    width: 100%;
+    padding-top: 20px;
+}
+
+.containerHeader {
+    float: left;
+    width: 60%;
+}
+
+.divlogo {
+    position: relative;
+    float: left;
+    width: 10%;
+    padding-right: 100px;
+}
+
+.divIcons {
+    float: right;
+    position: relative;
+    padding-right: 20px;
+    text-align: right;
+}
+
+.icons {
+    padding-right: 20px;
+    transform: scale(0.7, 0.7);
+}
+
+nav {
+    display: inline-block;
+    position: relative;
+    justify-content: left;
+    width: 80%;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    padding-left: 20px;
+    padding-top: 33px;
+    padding-right: 20px;
+    position: relative;
+}
+
+nav ul li a {
+    font-family: 'Raleway';
+    color: var(--colorText);
+    text-decoration: none;
+    font-size: var(--p);
+}
+
+.hoverHeaderItems:hover{
+    color: #ffb100;
+}
+
+/*CSS für Content*/
+.pictureBanner {
+    width: 100%;
+    z-index: -1;
+}
+
+.pictureIcon {
+    position: absolute;
+    top: 35%;
+    left: 25%;
+    width: 20%;
+    height: auto;
+    z-index: 1;
+}
+
+.container {
+    position: absolute;
+    top: 40%;
+    left: 56%;
+    z-index: 1;
+}
+
+.container h2 {
+    color: #292929;
+}
+
+.container h3 {
+    color: white;
+}
+
+.whiteBox {
+    width: 70%;
+    height: auto;
+    margin-left: 13%;
+    margin-top: -90px;
+    padding: 20%;
+    box-sizing: border-box;
+    border-radius: 21px;
+    background: white;
+    position: relative;
+    z-index: 1;
+}
+
+.whiteBoxHeading {
+    color: #292929;
+    position: absolute;
+    top: 180%;
+    left: 26%;
+    z-index: 100;
+}
+
+/*CSS für Footer*/
+
+footer nav {
+    width: 20%;
+}
+
+.wrapper {
+    display: inline-block;
+    padding-top: 20px;
+    padding-left: 38px;
+    width: 100%;
+}
+
+.footerLeft {
+    position: relative;
+    width: 70%;
+    float: left;
+}
+
+.generalInformation {
+    display: inline-block;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.footerMiddle {
+    position: relative;
+    width: 15%;
+    float: left;
+}
+
+ul.information {
+    padding: 0;
+    list-style: none;
+}
+
+.footerRight {
+    position: relative;
+    width: 15%;
+    float: right;
+}
+
+ul.resources {
+    padding: 0;
+    list-style: none;
+}
+
+.help{
+    font-family: 'Lato';
+    color: var(--colorText);
+    font-size: var(--p);
+    text-decoration: none;
+}
