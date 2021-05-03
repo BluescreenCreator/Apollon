@@ -116,6 +116,17 @@ nav ul li a {
     margin-bottom: 0%;
 }
 
+.welcomeBanner{
+    display:inline-table;
+}
+
+.welcomeText{
+    z-index: 1000;
+    width: 100%;
+    margin-left: 62.5%;
+    margin-top: -16%;
+}
+
 .wrapper {
     width: 100%;
     padding: 0 15px;
