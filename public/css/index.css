@@ -282,7 +282,7 @@ header .login p{
 }
 
 .createAccountBtn {
-    margin-top: 120%;
+    margin-top: 125%;
     margin-left: 40%;
 }
 
@@ -302,6 +302,31 @@ header .login p{
 
 .createAccount:hover {
     cursor: pointer;
+}
+
+
+.tutorial {
+  text-align: center;
+  margin-top: -7%;
+}
+
+.tutorial a {
+  text-decoration: none;
+  font-family: 'Lato';
+  font-size: var(--p);
+  color: white;
+}
+
+.tutorial a:hover {
+  color: var(--colorAccent);
+}
+
+.or {
+  font-family: 'Lato';
+  font-size: 20x;
+  position: relative;
+  text-align: center;
+  margin-top: 2%;
 }
 
 
