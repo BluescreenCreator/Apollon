@@ -379,3 +379,7 @@ footer{
     .rights{
         font-size: 12px;
     }
+
+    .helpLink {
+        text-decoration: none;
+    }

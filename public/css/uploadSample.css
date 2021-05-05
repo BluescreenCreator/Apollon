@@ -333,3 +333,7 @@ nav ul li a:hover {
   .gesamt {
     padding-left: 10%;
   }
+
+  .helpLink {
+    text-decoration: none;
+}

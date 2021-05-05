@@ -242,3 +242,7 @@ textarea::placeholder {
 #settingUpAccount:hover {
   cursor: pointer;
 }
+
+.helpLink {
+  text-decoration: none;
+}
