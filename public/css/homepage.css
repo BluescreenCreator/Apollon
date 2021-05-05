@@ -126,9 +126,8 @@ nav ul li a {
 
 .welcomeText{
     z-index: 1000;
-    width: 100%;
-    margin-left: 62.5%;
-    margin-top: -16%;
+    margin-left: 61.7%;
+    margin-top: -16.5%;
 }
 
 .wrapper {
@@ -234,27 +233,64 @@ section .teaser ul li:hover .text {
 }
 
 
-.Popular-Artists{
+.separationLine{
+    background-color: #949494;
+    width: 93%;
+    height: 0.01px;
+    margin-left:  40px;
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
+/*Popular Artists*/
+.popularArtistsHeading{
     padding-left: 40px;
     margin-bottom: 12px;
 }
 
-.Trennlinie{
-    background-color: #949494;
-    width: 93%;
-    height: 0.02px;
-    margin-left:  40px;
-    margin-top: 0px;
-    padding-top: 0px;
-    
+.artistPictures{
+    max-width: 16%;
+    padding-right: 10%;
+    padding-top: 2%;
 }
 
-.Top-Ten{
+.popularArtistList{
+    display: flex;
+    position: relative;
+    margin-left: 4.5%;
+}
+
+
+
+
+/*Top-Ten*/
+.topTenHeading{
     padding-top: 100px;
     padding-left: 40px;
     margin-bottom: 12px;
 }
 
+.samplePictures{
+    max-width: 16%;
+    padding-right: 10%;
+    padding-top: 2%;
+}
+
+.pictureDescription{
+    display: flex;
+    padding-right: 0%;
+    margin-left:4.5%;
+}
+
+.sampleDescription{
+    padding-right: 0%;
+    margin-right: -7%;
+}
+
+.topTenList{
+    display: flex;
+    margin-left: 4.5%;
+}
 
 
 /*CSS für Footer*/
