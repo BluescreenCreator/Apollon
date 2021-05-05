@@ -79,6 +79,10 @@ a.linkHeader:hover{
     transform: scale(0.7, 0.7);
 }
 
+.profilePicture {
+    margin-bottom: -6px;
+}
+
 nav {
     display: inline-block;
     position: relative;
