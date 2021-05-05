@@ -69,6 +69,10 @@ header {
     transform: scale(0.7, 0.7);
 }
 
+.profilePicture {
+    margin-bottom: -6px;
+}
+
 nav {
     display: inline-block;
     position: relative;
@@ -111,8 +115,8 @@ nav ul li a {
 /*CSS für Content*/
 
 .content {
-    margin-left: 80px;
-    margin-right: 80px;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 input {
