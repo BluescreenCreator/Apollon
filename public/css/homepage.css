@@ -229,10 +229,10 @@ section .teaser ul li:hover .text {
 }
 
 
-.Trennlinie{
+.separationLine{
     background-color: #949494;
     width: 93%;
-    height: 0.02px;
+    height: 0.01px;
     margin-left:  40px;
     margin-top: 0px;
     padding-top: 0px;
@@ -253,7 +253,7 @@ section .teaser ul li:hover .text {
 .popularArtistList{
     display: flex;
     position: relative;
-    margin-left: 5%;
+    margin-left: 4.5%;
 }
 
 
@@ -275,7 +275,7 @@ section .teaser ul li:hover .text {
 .pictureDescription{
     display: flex;
     padding-right: 0%;
-    margin-left:5%;
+    margin-left:4.5%;
 }
 
 .sampleDescription{
@@ -285,7 +285,7 @@ section .teaser ul li:hover .text {
 
 .topTenList{
     display: flex;
-    margin-left: 5%;
+    margin-left: 4.5%;
 }
 
 
