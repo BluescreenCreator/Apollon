@@ -17,8 +17,6 @@
 
 body {
     background-color: var(--background-color);
-    margin-left: 80px;
-    margin-right: 80px;
 }
 
 h3 {
@@ -71,6 +69,10 @@ header {
     transform: scale(0.7, 0.7);
 }
 
+.profilePicture {
+    margin-bottom: -6px;
+}
+
 nav {
     display: inline-block;
     position: relative;
@@ -99,6 +101,10 @@ nav ul li a {
     font-size: var(--p);
 }
 
+.hoverHeaderItems:hover{
+    color: #ffb100;
+}
+
 #coloredHeaderItem{
     font-family: 'Raleway';
     color: var(--colorAccent);
@@ -107,6 +113,11 @@ nav ul li a {
 }
 
 /*CSS für Content*/
+.content {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
 .coloredText {
     color: var(--colorAccent);
 }
@@ -119,34 +130,37 @@ nav ul li a {
 .step1 {
     box-sizing: border-box;
     display: inline-block;
-    width: 22%;
-    margin-left: 2%;
-    margin-right: 2%;
+    width: 22.5%;
+    margin-left: 2.2%;
+    margin-right: 2.2%;
     padding: 10px;
+    padding-bottom: 20px;
 }
 
 .step2 {
     box-sizing: border-box;
     display: inline-block;
-    width: 22%;
-    margin-right: 2%;
+    width: 22.5%;
+    margin-right: 2.2%;
     padding: 10px;
+    padding-bottom: 20px;
 }
 
 .step3 {
     box-sizing: border-box;
     display: inline-block;
-    width: 22%;
-    margin-right: 2%;
+    width: 22.5%;
+    margin-right: 2.2%;
     padding: 10px;
+    padding-bottom: 20px;
 }
 
 .step4 {
     box-sizing: border-box;
     display: inline-block;
-    width: 22%;
-    margin-right: 2%;
+    width: 22.5%;
     padding: 10px;
+    padding-bottom: 20px;
 }
 
 .movePart {
@@ -239,7 +253,7 @@ hr {
     border-style: solid;
     height: 0.02px;
     margin: 0px;
-    width: 98%;
+    width: 220px;
     margin-top: 2px;
 }
 
@@ -302,56 +316,70 @@ a {
 
 /*CSS für Footer*/
 
-footer nav {
-    width: 20%;
-}
+footer{
+    margin-left: 3%;
+    }
+    
+    footer p{
+        font-size: 16px;
+    }
+    
+    
+    footer nav {
+        width: 20%;
+    }
+    
+    .wrapper {
+        display: inline-block;
+        padding-top: 20px;
+        padding-left: 38px;
+        width: 100%;
+    }
+    
+    .footerLeft {
+        position: relative;
+        width: 70%;
+        float: left;
+    }
+    
+    .generalInformation {
+        display: inline-block;
+        position: relative;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    
+    .footerMiddle {
+        position: relative;
+        width: 15%;
+        float: left;
+    }
+    
+    ul.information {
+        padding: 0;
+        list-style: none;
+    }
+    
+    .footerRight {
+        position: relative;
+        width: 15%;
+        float: right;
+    }
+    
+    ul.resources {
+        padding: 0;
+        list-style: none;
+    }
+    
+    .generalInformation{
+        line-height: 13px;
+    }
+    
+    .rights{
+        font-size: 12px;
+    }
 
-.wrapper {
-    display: inline-block;
-    padding-top: 20px;
-    padding-left: 38px;
-    width: 100%;
-}
-
-.footerLeft {
-    position: relative;
-    width: 70%;
-    float: left;
-}
-
-.generalInformation {
-    display: inline-block;
-    position: relative;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-.footerMiddle {
-    position: relative;
-    width: 15%;
-    float: left;
-}
-
-ul.information {
-    padding: 0;
-    list-style: none;
-}
-
-.footerRight {
-    position: relative;
-    width: 15%;
-    float: right;
-}
-
-ul.resources {
-    padding: 0;
-    list-style: none;
-}
-
-.help{
-    font-family: 'Lato';
-    color: var(--colorText);
-    font-size: var(--p);
-    text-decoration: none;
-}
+    .helpLink {
+        text-decoration: none;
+    }

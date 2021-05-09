@@ -70,6 +70,10 @@
     transform: scale(0.7, 0.7);
 }
 
+.profilePicture {
+  margin-bottom: -6px;
+}
+
 nav {
     display: inline-block;
     position: relative;
@@ -105,53 +109,69 @@ nav ul li a:hover {
   
   /* CSS für Footer*/
   
-  footer nav {
-    width: 20%;
-  }
-  
-  .wrapper {
-    display: inline-block;
-    padding-top: 20px;
-    padding-left: 38px;
-    width: 100%;
-  }
-  
-  .footerLeft {
-    position: relative;
-    width: 70%;
-    float: left;
-  }
-  
-  .generalInformation {
-    display: inline-block;
-    position: relative;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  }
-  
-  .footerMiddle {
-    position: relative;
-    width: 15%;
-    float: left;
-  }
-  
-  ul.information {
-    padding: 0;
-    list-style: none;
-  }
-  
-  .footerRight {
-    position: relative;
-    width: 15%;
-    float: right;
-  }
-  
-  ul.resources {
-    padding: 0;
-    list-style: none;
-  }
-  
+  footer{
+    margin-left: 3%;
+    }
+    
+    footer p{
+        font-size: 16px;
+    }
+    
+    
+    footer nav {
+        width: 20%;
+    }
+    
+    .wrapper {
+        display: inline-block;
+        padding-top: 20px;
+        padding-left: 38px;
+        width: 100%;
+    }
+    
+    .footerLeft {
+        position: relative;
+        width: 70%;
+        float: left;
+    }
+    
+    .generalInformation {
+        display: inline-block;
+        position: relative;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    
+    .footerMiddle {
+        position: relative;
+        width: 15%;
+        float: left;
+    }
+    
+    ul.information {
+        padding: 0;
+        list-style: none;
+    }
+    
+    .footerRight {
+        position: relative;
+        width: 15%;
+        float: right;
+    }
+    
+    ul.resources {
+        padding: 0;
+        list-style: none;
+    }
+    
+    .generalInformation{
+        line-height: 13px;
+    }
+    
+    .rights{
+        font-size: 12px;
+    }
   /* Weiße Box */
   
   .whiteBox {
@@ -313,3 +333,7 @@ nav ul li a:hover {
   .gesamt {
     padding-left: 10%;
   }
+
+  .helpLink {
+    text-decoration: none;
+}

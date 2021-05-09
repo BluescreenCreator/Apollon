@@ -6,26 +6,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/teamSelection.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css.css">
-  <title>Upload Sample</title>
+  <title>Teams</title>
 </head>
 <body>
     
     <header>
         <div class="divlogo">
-            <img src="images/Logo.png" class="icons">
+            <a href="homepage.html"><img src="images/Logo.png" class="icons"></a>
         </div>
         <div class="containerHeader">
             <nav>
                 <ul>
-                    <li><a href="#">Search Samples</a></li>
-                    <li><a href="#">Discover Artists</a></li>
-                    <li><a href="#">Liked Samples</a></li>
-                    <li><a class="teams" href="#">Teams</a></li>
+                    <li><a href="searchSamples.html">Search Samples</a></li>
+                    <li><a href="discoverArtists.html">Discover Artists</a></li>
+                    <li><a href="likedSamples.html">Liked Samples</a></li>
+                    <li><a class="teams" href="teamSelection.html">Teams</a></li>
                 </ul>
             </nav>
         </div>
         <div class="divIcons">
-            <img src="images/Gruppe 159.png" class="icons">
+            <a href="#"><img src="images/notifications.png" class="icons"></a>
+            <a href="myProfile.html"><img src="images/profile.png" class="icons profilePicture"></a>
         </div>
     </header>
     
@@ -36,7 +37,7 @@
 <div class="content">
     <img class="teamSel" src="images/team-selection-image.png" alt="">
     <div id="profile1" class="profileImages"><img src="images/profiles.png" alt=""></div>
-    <a href="#"><p>Das Team</p></a>
+    <a href="team-page.html"><p>Das Team</p></a>
     <br>
     <div class="profileImages"><img src="images/profiles.png" alt=""></div>
     <a href="#"><p>Die Musikgruppe</p></a>
@@ -49,7 +50,7 @@
     <br>
     <div class="profileImages"><img src="images/profiles.png" alt=""></div>
     <a href="#"><p>Die Musizisten</p></a>
-    <button class="createATeam"><a href="#">Create a team</a></button>
+    <button class="createATeam"><a href="teambuilding-neu.html">Create a team</a></button>
 </div>
 
 
@@ -66,7 +67,7 @@
     
 
     <footer>
-        <div class="wrapper">
+        <div class="wrapper2">
             <div class="footerLeft">
                 <ul class="generalInformation">
                     <li><h3>Apollon</h3></li>
@@ -74,7 +75,7 @@
                         <li><p>adipiscing elit, sed do eiusmod tempor</p></li>
                         <li><p>incididunt ut labore et dolore magna aliqua.</p></li>
                         <li><img src="images/social_media_icons.png"></li>
-                        <li><p>© Apollon 2021  All Rights Reserved.</p></li>
+                        <li><p class="rights">© Apollon 2021  All Rights Reserved.</p></li>
                 </ul>
             </div>
             <div class="footerMiddle">
@@ -90,11 +91,11 @@
                     <ul class="resources">
                         <li><p>News</p></li>
                         <li><p>Videos</p></li>
-                        <li><p>FAQ's</p></li>
+                        <a href="helpPage.html" class="helpLink"><li><p>Help</p></li></a>
                     </ul>
             </div>
         </div>
-    </footer>
+    </footer>   
     
     
       <script src="app.js" defer></script>
