@@ -19,10 +19,9 @@ body {
     background-color: var(--background-color);
 }
 
-h2{
+h2 {
     font-family: 'Raleway';
     font-size: var(--h2);
-    color: var(--colorText);
 }
 
 h3 {
@@ -44,7 +43,6 @@ p {
     color: var(--colorText);
 }
 
-
 /*CSS für Header*/
 
 header {
@@ -56,7 +54,6 @@ header {
     float: left;
     width: 60%;
 }
-
 
 .divlogo {
     position: relative;
@@ -109,122 +106,69 @@ nav ul li a {
     font-size: var(--p);
 }
 
-nav ul li a:hover {
-    color: var(--colorAccent);
-  }
-
-/*CSS für Body*/
-.content {
-    margin-top: 100px;
-    margin-left: 41px;
+.hoverHeaderItems:hover{
+    color: #ffb100;
 }
 
-.team-name{
-    color: var(--colorAccent);
+/*CSS für Content*/
+.pictureBanner {
+    width: 100%;
+    z-index: -1;
 }
 
-.members{
-    display: inline-block;
-}
-
-.profilePictures{
-   height: 70px;
-}
-
-.addArtistsButton {
-    cursor: pointer;
-    background-color: var(--colorText);
-    height: 70px;
-    line-height: 30px;  
-    width: 70px;  
-    border-radius: 50%;
-    text-align: center;
-    border-style: none;
-    margin-left: 30px;
-    margin-top: auto;
-    margin-bottom: auto;
-}
-
-.plusIcon {
-    cursor:pointer;
+.pictureIcon {
     position: absolute;
-    z-index: 100;
-    padding-top: 12px;
-    margin-left: -60px;
-    height: 50px;
+    top: 35%;
+    left: 25%;
+    width: 20%;
+    height: auto;
+    z-index: 1;
 }
 
+.container {
+    position: absolute;
+    top: 40%;
+    left: 56%;
+    z-index: 1;
+}
 
-button {
-    cursor: pointer;
-    font-family: 'Lato';
-    font-size: var(--p);
-    color: #fff;
-    position: relative;
-    border: 10px solid transparent;
+.container h2 {
+    color: #292929;
+}
+
+.container h3 {
+    color: white;
+}
+
+.whiteBox {
+    width: 70%;
+    height: auto;
+    margin-left: 13%;
+    margin-top: -90px;
+    padding: 20%;
+    box-sizing: border-box;
     border-radius: 21px;
-    width: 200px;
-    height: 70px;
-    background: linear-gradient(to right, #ffb100, #ff1845);
-    background-clip: padding-box;
-    margin-left: -12px;
-    margin-top: 10px;
-    font-size: var(--p);
+    background: white;
+    position: relative;
+    z-index: 1;
 }
 
-button a {
-    text-decoration: none;
-    color: #fff;
+.whiteBoxHeading {
+    color: #292929;
+    position: absolute;
+    top: 180%;
+    left: 26%;
+    z-index: 100;
 }
-
-.uploadSymbol{
-    height: 25px;
-    padding-top: 5px;
-    float: right;
-    margin-right: 12px;
-}
-
-.shareSamples{
-    display: block;
-}
-
-.share{
-    padding-top: 5px;
-    padding-bottom: 5px;
-    margin-bottom: 0px;
-    float: left;
-    margin-left: 10px;
-}
-
-
-
-
-.sharedSamples{
-    padding-top: 50px;
-    margin-bottom: 0px;
-    margin-bottom: 1%;
-
-}
-
-.separationLine{
-    background-color: #949494;
-    width: 93%;
-    height: 0.01px;
-    margin-left:  0px;
-    margin-top: 0px;
-}
-
-
 
 /*CSS für Footer*/
 footer{
-margin-left: 3%;
-}
+    margin-left: 3%;
+    }
 
 footer p{
     font-size: 16px;
 }
-
 
 footer nav {
     width: 20%;
@@ -279,8 +223,4 @@ ul.resources {
 
 .rights{
     font-size: 12px;
-}
-
-.helpLink {
-    text-decoration: none;
 }

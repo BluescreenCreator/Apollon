@@ -1,0 +1,388 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap'); /*Lato regular*/
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap'); /*Raleway light*/
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap'); /*Raleway bold>*/
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap'); /* Raleway semiBold */
+
+/*CSS für Alles*/
+
+:root {
+  --background-color: #292929;
+  --colorText: #929292;
+  --colorAccent: #ffb100;
+  --p: 18px;
+  --h4: 24px;
+  --h3: 32px;
+  --h2: 42px;
+  --h1: 55px;
+}
+
+body {
+  background-color: var(--background-color);
+  position: relative;
+}
+
+h3 {
+  font-family: 'Raleway';
+  font-size: var(--h3);
+  color: var(--colorText);
+}
+
+h4 {
+  font-family: 'Raleway';
+  font-weight: bold;
+  font-size: var(--h4);
+  color: var(--colorText);
+}
+
+p {
+  font-family: 'Lato';
+  font-size: var(--p);
+  color: var(--colorText);
+}
+
+/*CSS für Header*/
+
+header {
+  width: 100%;
+  padding-top: 20px;
+}
+
+.containerHeader {
+  float: left;
+  width: 60%;
+}
+
+.divlogo {
+  position: relative;
+  float: left;
+  width: 10%;
+  padding-right: 100px;
+}
+
+.icons {
+  padding-right: 20px;
+  transform: scale(0.7, 0.7);
+}
+
+header .login p{
+    float: right;
+    padding-right: 23.5%;
+    font-size: var(--h4);
+  }
+  
+  header .login p a{
+    text-decoration: none;
+    color: var(--colorText);
+  }
+  
+  header .login p a:hover{
+    color: var(--colorAccent);
+  }
+
+  #createAccountButton {
+    font-family: 'Lato';
+    font-size: var(--p);
+    color: #fff;
+    position: absolute;
+    border: 10px solid transparent;
+    border-radius: 21px;
+    background: linear-gradient(to right, #ffb100, #ff1845);
+    background-clip: padding-box;
+    width: 19.8%;
+    height: 2.3%;
+    margin-left: 63%;
+    z-index: 3;
+}
+
+#createAccountButton:hover {
+    cursor: pointer;
+}
+
+  /* Body */
+
+.apollon {
+    text-align: center;
+    margin-top: 7%;
+    position: relative;
+}
+
+.slogan {
+    position: absolute;
+    width: 60%;
+    height: auto;
+}
+
+.slogan .first {
+    font-size: 50px;
+    color: #fff;
+    margin-left: 12%;
+    margin-top: 12%;
+    font-family: 'Raleway';
+}
+
+.slogan .second {
+    font-size: 90px;
+    color: #fff;
+    margin-left: 12%;
+    margin-top: -3%;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 540;
+}
+
+.banner {
+    z-index: -2;
+    text-align: center;
+    position: absolute;
+    margin-top: -5%;
+}
+
+.banner img {
+    width: 173%;
+    height: auto;
+}
+
+.landingpageImg {
+    text-align: center;
+    margin-top: -7.5%;
+}
+
+.landingpageImg img {
+    z-index: -1;
+    width: 90%;
+}
+
+.arrow {
+    text-align: center;
+    margin-top: 3%;
+}
+
+.arrow img {
+    width: 7%;
+}
+
+.box1 {
+    margin-top: 3%;
+}
+
+.box1 .left {
+    float: left;
+    width: 40%;
+    margin-left: 5%;
+    margin-top: 3%;
+}
+
+.box1 .left p {
+    line-height: 25px;
+    color: #fff;
+}
+
+.box1 .left h1 {
+    font-family: 'Raleway';
+    font-size: var(--h2);
+    color: #fff;
+}
+
+.box1 .right {
+    float: right;
+    width: 50%;
+}
+
+.box1 .right img {
+    width: 100%;
+    margin-top: 6%;
+}
+
+.box2 .left {
+    float: left;
+    width: 50%;
+    margin-top: 4.4%;
+}
+
+.box2 .left img {
+    width: 100%;
+    margin-top: 6%;
+}
+
+.box2 .right {
+    float: right;
+    width: 40%;
+    margin-right: 5%;
+    margin-top: 3%;
+}
+
+.box2 .right p {
+    line-height: 25px;
+    color: #fff;
+}
+
+.box2 .right h1 {
+    font-family: 'Raleway';
+    font-size: var(--h2);
+    color: #fff;
+}
+
+.box3 .left {
+    float: left;
+    width: 50%;
+    margin-top: 4.4%;
+    margin-left: 3%;
+}
+
+.box3 .left p {
+    line-height: 25px;
+    color: #fff;
+    width: 90%;
+}
+
+.box3 .left h1 {
+    font-family: 'Raleway';
+    font-size: var(--h2);
+    color: #fff;
+}
+
+.box3 .right {
+    float: right;
+    width: 40%;
+    margin-right: 10%;
+    margin-top: -26.8%;
+}
+
+.box3 .right img {
+    width: 124.8%;
+    margin-top: 6%;
+}
+
+.box4 .left {
+    float: left;
+    width: 50%;
+    margin-top: 4.4%;
+}
+
+.box4 .left img {
+    width: 100%;
+    margin-top: -3.5%;
+}
+
+.box4 .right {
+    float: right;
+    width: 40%;
+    margin-right: 5%;
+    margin-top: 3%;
+}
+
+.box4 .right p {
+    line-height: 25px;
+    color: #fff;
+}
+
+.box4 .right h1 {
+    font-family: 'Raleway';
+    font-size: var(--h2);
+    color: #fff;
+}
+
+.createAccountBtn {
+    margin-top: 125%;
+    margin-left: 40%;
+}
+
+.createAccount {
+    font-family: 'Lato';
+    font-size: var(--p);
+    color: #fff;
+    position: absolute;
+    border: 10px solid transparent;
+    border-radius: 21px;
+    background: linear-gradient(to right, #ffb100, #ff1845);
+    background-clip: padding-box;
+    width: 19.8%;
+    height: 2.3%;
+    z-index: 3;
+}
+
+.createAccount:hover {
+    cursor: pointer;
+}
+
+
+.tutorial {
+  text-align: center;
+  margin-top: -7%;
+}
+
+.tutorial a {
+  text-decoration: none;
+  font-family: 'Lato';
+  font-size: var(--p);
+  color: white;
+}
+
+.tutorial a:hover {
+  color: var(--colorAccent);
+}
+
+.or {
+  font-family: 'Lato';
+  font-size: 20x;
+  position: relative;
+  text-align: center;
+  margin-top: 2%;
+}
+
+
+/* CSS für Footer*/
+footer{
+    margin-left: 3%;
+    }
+    
+    footer p{
+        font-size: 16px;
+    }
+    
+footer nav {
+  width: 20%;
+}
+
+.wrapper {
+  display: inline-block;
+  padding-top: 20px;
+  padding-left: 38px;
+  width: 100%;
+}
+
+.footerLeft {
+  position: relative;
+  width: 70%;
+  float: left;
+}
+
+.generalInformation {
+  display: inline-block;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footerMiddle {
+  position: relative;
+  width: 15%;
+  float: left;
+}
+
+ul.information {
+  padding: 0;
+  list-style: none;
+}
+
+.footerRight {
+  position: relative;
+  width: 15%;
+  float: right;
+}
+
+ul.resources {
+  padding: 0;
+  list-style: none;
+}
+

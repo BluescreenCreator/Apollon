@@ -19,10 +19,9 @@ body {
     background-color: var(--background-color);
 }
 
-h2{
+h2 {
     font-family: 'Raleway';
     font-size: var(--h2);
-    color: var(--colorText);
 }
 
 h3 {
@@ -44,7 +43,6 @@ p {
     color: var(--colorText);
 }
 
-
 /*CSS für Header*/
 
 header {
@@ -56,7 +54,6 @@ header {
     float: left;
     width: 60%;
 }
-
 
 .divlogo {
     position: relative;
@@ -109,122 +106,153 @@ nav ul li a {
     font-size: var(--p);
 }
 
-nav ul li a:hover {
-    color: var(--colorAccent);
-  }
+.hoverHeaderItems:hover{
+    color: #ffb100;
+}
 
-/*CSS für Body*/
+#coloredHeaderItem{
+    font-family: 'Raleway';
+    color: var(--colorAccent);
+    text-decoration: none;
+    font-size: var(--p);
+}
+
+/*CSS für Content*/
+
 .content {
-    margin-top: 100px;
-    margin-left: 41px;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
-.team-name{
+input {
+    background-color: var(--background-color);
+    border-style: solid;
+    border-radius: 10px;
+    border-color: var(--colorText);
+    font-size: var(--p);
+    font-family: 'Lato';
     color: var(--colorAccent);
+    height: 30px;
+    width: 80%;
 }
 
-.members{
+input:focus {
+    outline: none;
+}
+
+#searchIcon {
+    margin-bottom: -1.5%;
+    margin-left: -13%;
+    width: 7%;
+    height: auto;
+}
+
+.inputSearch {
+    box-sizing: border-box;
     display: inline-block;
+    width: 20%;
 }
 
-.profilePictures{
-   height: 70px;
+.filter1 {
+    box-sizing: border-box;
+    display: inline-block;
+    width: 10%;
 }
 
-.addArtistsButton {
-    cursor: pointer;
-    background-color: var(--colorText);
-    height: 70px;
-    line-height: 30px;  
-    width: 70px;  
-    border-radius: 50%;
-    text-align: center;
-    border-style: none;
-    margin-left: 30px;
-    margin-top: auto;
-    margin-bottom: auto;
+.filter2 {
+    box-sizing: border-box;
+    display: inline-block;
+    width: 10%; 
 }
 
-.plusIcon {
-    cursor:pointer;
-    position: absolute;
-    z-index: 100;
-    padding-top: 12px;
-    margin-left: -60px;
-    height: 50px;
+.filter3 {
+    box-sizing: border-box;
+    display: inline-block;
+    width: 9%;
 }
 
+.partingLine {
+    box-sizing: border-box;
+    display: inline-block;
+    width: 0.5%; 
+}
 
-button {
-    cursor: pointer;
+.filter4 {
+    box-sizing: border-box;
+    display: inline-block;
+    width: 10%;
+}
+
+.filter5 {
+    box-sizing: border-box;
+    display: inline-block;
+    width: 10%;
+}
+
+.filter6 {
+    box-sizing: border-box;
+    display: inline-block;
+    width: 10%;
+}
+
+.filter7 {
+    box-sizing: border-box;
+    display: inline-block;
+    width: 10%;
+}
+
+label {
     font-family: 'Lato';
     font-size: var(--p);
-    color: #fff;
-    position: relative;
-    border: 10px solid transparent;
-    border-radius: 21px;
-    width: 200px;
-    height: 70px;
-    background: linear-gradient(to right, #ffb100, #ff1845);
-    background-clip: padding-box;
-    margin-left: -12px;
-    margin-top: 10px;
-    font-size: var(--p);
+    color: var(--colorText);
+    margin-bottom: 4px;
 }
 
-button a {
-    text-decoration: none;
-    color: #fff;
-}
-
-.uploadSymbol{
-    height: 25px;
-    padding-top: 5px;
-    float: right;
-    margin-right: 12px;
-}
-
-.shareSamples{
+select {
+    background-color: var(--background-color);
     display: block;
+    font-size: var(--p);
+    color: var(--colorText);
+    width: 95%;
+    height: 30px;
+    box-sizing: border-box;
+    margin: 0;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 2px;
+    border: 1px solid var(--colorText);
+    border-radius: 5px;
 }
 
-.share{
-    padding-top: 5px;
-    padding-bottom: 5px;
-    margin-bottom: 0px;
-    float: left;
-    margin-left: 10px;
+select::-ms-expand {
+    display: none;
 }
 
-
-
-
-.sharedSamples{
-    padding-top: 50px;
-    margin-bottom: 0px;
-    margin-bottom: 1%;
-
+button {
+    background-color: var(--background-color);
+    color: var(--colorText);
+    border: 1px solid var(--colorText);
+    border-radius: 5px;
+    font-family: 'Lato';
+    font-size: var(--p);
+    box-sizing: border-box;
+    width: 95%;
+    height: 30px;
 }
 
-.separationLine{
-    background-color: #949494;
-    width: 93%;
-    height: 0.01px;
-    margin-left:  0px;
-    margin-top: 0px;
+#imgPartingLine {
+    height: 45px;
+    margin-bottom: -15px;
 }
-
-
 
 /*CSS für Footer*/
 footer{
-margin-left: 3%;
-}
+    margin-left: 3%;
+    }
 
 footer p{
     font-size: 16px;
 }
-
 
 footer nav {
     width: 20%;
