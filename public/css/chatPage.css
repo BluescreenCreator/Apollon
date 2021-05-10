@@ -217,6 +217,7 @@ nav ul li a {
     display: flex;
     width: 100%;
     margin-top: 5%;
+    float: bottom;
 }
 
 #eingabeFeld{
