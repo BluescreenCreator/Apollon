@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/uploadSample.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css.css">
-  <title>Upload Sample</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/uploadSample.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css.css">
+    <title>Upload Sample</title>
 </head>
+
 <body>
-    
+
     <header>
         <div class="divlogo">
             <a href="homepage.html"><img src="images/Logo.png" class="icons"></a>
@@ -29,29 +31,43 @@
             <a href="myProfile.html"><img src="images/profile.png" class="icons profilePicture"></a>
         </div>
     </header>
-    
+
     <br>
     <br>
     <br>
 
-<div class="gesamt">
-    <div class="content">
-        <h1>Upload your sample</h1>
-        <div class="box1"><a href=""><img src="images/uploadSample.png" alt=""></a><p>upload wave</p></div>
-        <div class="box2"><a href=""><img src="images/uploadSample.png" alt=""></a><p>upload cover</p></div>
-        <img id="png" src="images/woman.png" alt="">
+    <div class="gesamt">
+        <div class="content">
+            <h1>Upload your sample</h1>
+            <div class="box1">
+                <label class="content uploadWave">
+                    <img src="images/uploadSample.png" alt="Upload Symbol">
+                    <input type="file" value="upload" id="fileButtonWave" accept="audio/*"/>
+                    <p>Upload Sample</p>
+                </label>
+            </div>
+
+            <div class="box2"><a href="">
+                    <label class="content uploadCover">
+                        <img src="images/uploadSample.png" alt="Upload Symbol">
+                        <input type="file" value="upload" id="fileButtonPicture" accept="image/*"/>
+                        <p>Upload Cover</p>
+                    </label>
+            </div>
+            <img id="png" src="images/woman.png" alt="">
+        </div>
+
+        <div class="exitBtn"><a href="#" id="ex"><img id="exit" src="images/exit.png" alt=""></a></div>
     </div>
-
-    <div class="exitBtn"><a href="myProfile.html" id="ex"><img id="exit" src="images/exit.png" alt=""></a></div>
-</div>
     <div class="input-fields">
         <input id="title" type="name" placeholder="title" value="">
         <input id="genre" type="name" placeholder="genre" value="">
-     </div>
-<div class="gesamt">
-        <button id="createAccountButton" class="btn-action"><a class="btnUpload" href="#">Upload to Apollon</a></button>
-</div>
-    
+    </div>
+    <div class="gesamt">
+        <button id="createAccountButton" class="btn-action"><a class="btnUpload" href="homepage.html">Upload to
+                Apollon</a></button>
+    </div>
+
 
     <div class="whiteBox"></div>
 
@@ -60,7 +76,7 @@
     <br>
     <br>
     <br>
-    
+
 
     <footer>
         <div class="wrapper2">
@@ -76,25 +92,127 @@
             </div>
             <div class="footerMiddle">
                 <h4>Information</h4>
-                    <ul class="information">
-                        <li><p>Privacy policy</p></li>
-                        <li><p>Terms of service</p></li>
-                        <li><p>Contact us</p></li>
-                    </ul>
+                <ul class="information">
+                    <li>
+                        <p>Privacy policy</p>
+                    </li>
+                    <li>
+                        <p>Terms of service</p>
+                    </li>
+                    <li>
+                        <p>Contact us</p>
+                    </li>
+                </ul>
             </div>
-            <div class="footerRight">        
+            <div class="footerRight">
                 <h4>Resources</h4>
-                    <ul class="resources">
-                        <li><p>News</p></li>
-                        <li><p>Videos</p></li>
-                        <a href="helpPage.html" class="helpLink"><li><p>Help</p></li></a>
-                    </ul>
+                <ul class="resources">
+                    <li>
+                        <p>News</p>
+                    </li>
+                    <li>
+                        <p>Videos</p>
+                    </li>
+                    <li>
+                        <p>FAQ's</p>
+                    </li>
+                </ul>
             </div>
         </div>
-    </footer>   
-    
-    
-      <script src="app.js" defer></script>
-    
-    </body>
-    </html>
+    </footer>
+
+    <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase-storage.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyCAf1IK82QhYaxxK0mdbMjkSUnlb-gzxhc",
+            authDomain: "apollon-da74a.firebaseapp.com",
+            projectId: "apollon-da74a",
+            storageBucket: "apollon-da74a.appspot.com",
+            messagingSenderId: "864434871892",
+            appId: "1:864434871892:web:26bb2b258c0ad5805d17c1"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+
+        // Get elements
+        var uploader = document.getElementById('uploader');
+        var fileButtonWave = document.getElementById('fileButtonWave');
+
+        // Listen for file selection
+        fileButtonWave.addEventListener('change', function (e) {
+            // Get File
+            var file = e.target.files[0];
+
+            // Create storage ref
+            var storageRefWave = firebase.storage().ref('audiosample/' + file.name);
+
+            // Upload file
+            var task = storageRefWave.put(file);
+
+            // Update progress bar
+            task.on('state_changed',
+
+                function progress(snapshot) {
+                    var percentage = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
+                    uploader.value = percentage;
+                },
+
+                function error(err) {
+
+                },
+
+            );
+        });
+    </script>
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyCAf1IK82QhYaxxK0mdbMjkSUnlb-gzxhc",
+            authDomain: "apollon-da74a.firebaseapp.com",
+            projectId: "apollon-da74a",
+            storageBucket: "apollon-da74a.appspot.com",
+            messagingSenderId: "864434871892",
+            appId: "1:864434871892:web:26bb2b258c0ad5805d17c1"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+
+        // Get elements
+        var uploader = document.getElementById('uploader');
+        var fileButtonPicture = document.getElementById('fileButtonPicture');
+
+        // Listen for file selection
+        fileButtonPicture.addEventListener('change', function (e) {
+            // Get File
+            var file = e.target.files[0];
+
+            // Create storage ref
+            var storageRefCover = firebase.storage().ref('coverpicture/' + file.name);
+
+            // Upload file
+            var task = storageRefCover.put(file);
+
+            // Update progress bar
+            task.on('state_changed',
+
+                function progress(snapshot) {
+                    var percentage = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
+                    uploader.value = percentage;
+                },
+
+                function error(err) {
+
+                },
+
+            );
+        });
+
+    </script>
+
+</body>
+
+</html>

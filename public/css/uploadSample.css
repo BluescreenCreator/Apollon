@@ -1,73 +1,73 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap'); /*Lato regular*/
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap'); /*Raleway light*/
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap'); /*Raleway bold>*/
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap"); /*Lato regular*/
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap"); /*Raleway light*/
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap"); /*Raleway bold>*/
 
 /*CSS für Alles*/
 
 :root {
-    --background-color: #292929;
-    --colorText: #929292;
-    --colorAccent: #ffb100;
-    --p: 18px;
-    --h4: 24px;
-    --h3: 32px;
-    --h2: 42px;
-    --h1: 55px;
-  }
-  
-  body {
-    background-color: var(--background-color);
-    position: relative;
-  }
-  
-  h3 {
-    font-family: 'Raleway';
-    font-size: var(--h3);
-    color: var(--colorText);
-  }
-  
-  h4 {
-    font-family: 'Raleway';
-    font-weight: bold;
-    font-size: var(--h4);
-    color: var(--colorText);
-  }
-  
-  p {
-    font-family: 'Lato';
-    font-size: var(--p);
-    color: var(--colorText);
-  }
-  
-  /*CSS für Header*/
-  
-  header {
-    width: 100%;
-    padding-top: 20px;
+  --background-color: #292929;
+  --colorText: #929292;
+  --colorAccent: #ffb100;
+  --p: 18px;
+  --h4: 24px;
+  --h3: 32px;
+  --h2: 42px;
+  --h1: 55px;
+}
+
+body {
+  background-color: var(--background-color);
+  position: relative;
+}
+
+h3 {
+  font-family: "Raleway";
+  font-size: var(--h3);
+  color: var(--colorText);
+}
+
+h4 {
+  font-family: "Raleway";
+  font-weight: bold;
+  font-size: var(--h4);
+  color: var(--colorText);
+}
+
+p {
+  font-family: "Lato";
+  font-size: var(--p);
+  color: var(--colorText);
+}
+
+/*CSS für Header*/
+
+header {
+  width: 100%;
+  padding-top: 20px;
 }
 
 .containerHeader {
-    float: left;
-    width: 60%;
+  float: left;
+  width: 60%;
 }
 
 .divlogo {
-    position: relative;
-    float: left;
-    width: 10%;
-    padding-right: 100px;
+  position: relative;
+  float: left;
+  width: 10%;
+  padding-right: 100px;
 }
 
 .divIcons {
-    float: right;
-    position: relative;
-    padding-right: 20px;
-    text-align: right;
+  float: right;
+  position: relative;
+  padding-right: 20px;
+  text-align: right;
 }
 
 .icons {
-    padding-right: 20px;
-    transform: scale(0.7, 0.7);
+  padding-right: 20px;
+  transform: scale(0.7, 0.7);
 }
 
 .profilePicture {
@@ -75,31 +75,31 @@
 }
 
 nav {
-    display: inline-block;
-    position: relative;
-    justify-content: left;
-    width: 80%;
+  display: inline-block;
+  position: relative;
+  justify-content: left;
+  width: 80%;
 }
 
 nav ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 nav li {
-    display: inline-block;
-    padding-left: 20px;
-    padding-top: 33px;
-    padding-right: 20px;
-    position: relative;
+  display: inline-block;
+  padding-left: 20px;
+  padding-top: 33px;
+  padding-right: 20px;
+  position: relative;
 }
 
 nav ul li a {
-    font-family: 'Raleway';
-    color: var(--colorText);
-    text-decoration: none;
-    font-size: var(--p);
+  font-family: "Raleway";
+  color: var(--colorText);
+  text-decoration: none;
+  font-size: var(--p);
 }
 
 nav ul li a:hover {
@@ -272,68 +272,82 @@ nav ul li a:hover {
     text-align: center;
 }
 
+.uploadCover {
+  margin: 0;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+}
+
 .content .box1 img {
-    width: 50%;
-    padding-top: 10%;
+  width: 50%;
+  padding-top: 10%;
 }
 
 .content .box2 img {
-    width: 50%;
-    padding-top: 10%;
+  width: 50%;
+  padding-top: 10%;
 }
 
 .content p {
-    margin: 0;
-    font-size: 16px;
-    margin-top: 3%;
-    padding-bottom: 3%;
+  margin: 0;
+  font-size: 16px;
+  margin-top: 10%;
+  margin-bottom: 5%;
 }
 
-  .input-fields {
-    margin-top: 24.5%;
-    margin-left: 23%;
-    z-index: 1;
-    position: absolute;
-  }
-  
-  input {
-    border: 1px solid var(--colorText);
-    border-radius: 3px;
-    display: block;
-    position: relative;
-    font-size: 18px;
-    padding: 6%;
-    margin-top: 10%;
-    margin-left: 9%;
-    width: 116%;
-  }
+input[type="file"] {
+  display: none;
+}
 
-  #createAccountButton {
-      font-family: 'Lato';
-      font-size: var(--p);
-      color: #fff;
-      position: absolute;
-      border: 10px solid transparent;
-      border-radius: 21px;
-      background: linear-gradient(to right, #ffb100, #ff1845);
-      background-clip: padding-box;
-      margin-top: 35.7%;
-      margin-left: 6.7%;
-      width: 20.3%;
-      height: 5.5%;
-      z-index: 999;
-  }
+.uploadWave {
+  margin: 0;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+}
 
-  .btnUpload {
-    font-size: var(--p);
-    color: #fff;
-    text-decoration: none;
-  }
-  
-  .gesamt {
-    padding-left: 10%;
-  }
+.input-fields {
+  margin-top: 24.5%;
+  margin-left: 23%;
+  z-index: 1;
+  position: absolute;
+}
 
-  .helpLink {
-    text-decoration: none;
+input {
+  border: 1px solid var(--colorText);
+  border-radius: 3px;
+  display: block;
+  position: relative;
+  font-size: 18px;
+  padding: 6%;
+  margin-top: 10%;
+  margin-left: 9%;
+  width: 116%;
+}
+
+#createAccountButton {
+  font-family: "Lato";
+  font-size: var(--p);
+  color: #fff;
+  position: absolute;
+  border: 10px solid transparent;
+  border-radius: 21px;
+  background: linear-gradient(to right, #ffb100, #ff1845);
+  background-clip: padding-box;
+  margin-top: 35.7%;
+  margin-left: 6.7%;
+  width: 20.3%;
+  height: 5.5%;
+  z-index: 999;
+}
+
+.btnUpload {
+  font-size: var(--p);
+  color: #fff;
+  text-decoration: none;
+}
+
+.gesamt {
+  padding-left: 10%;
 }
