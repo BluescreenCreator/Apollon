@@ -192,6 +192,14 @@ list-style: none;
   margin-top: 4.5%;
 }
 
+input[type="file"] {
+  display: none;
+}
+
+.profilePicture {
+  cursor: pointer;
+}
+
 .input-fields {
   margin-top: 18%;
   margin-left: 22.8%;
