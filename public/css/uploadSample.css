@@ -235,10 +235,11 @@ nav ul li a:hover {
      margin-left: 65%;
      margin-top: 8.3%;
      display: inline-block;
+     z-index: 1000;
   }
 
   .exitBtn {
-      z-index: 1;
+      z-index: 1000;
   }
 
   /* Upload-Box */
