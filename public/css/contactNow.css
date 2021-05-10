@@ -111,7 +111,6 @@ nav ul li a {
     font-size: var(--p);
 }
 
-
 /*CSS für Hauptteil*/
 #container{
     width: 85%;
@@ -167,7 +166,6 @@ nav ul li a {
     margin-left: 8%;
     display: inline-block;
     border-right: 1px solid #929292;
-    cursor: pointer;
 }
 .chatsLeft img{
     width: 20%;
@@ -190,33 +188,13 @@ nav ul li a {
     grid-area: w;
 }
 
-.windowChat img{
-    width: 6%;
-    margin-left:3%;
-}
-
-.windowChat p{
-    font-size: 10pt;
-    width: 35%;
-    padding: 2%;
-    border-radius: 30px;
-    border: 1px solid #929292;
-    margin-left: 8%;
-}
-
-#rightMessage{
-    margin-left: 53%;
-}
-
-#rightPicture{
-    float:right;
-    margin-right: 3%;
-}
 
 .eingabe{
     display: flex;
     width: 100%;
-    margin-top: 5%;
+    margin-top: 61%;
+    margin-bottom: 4%;
+
 }
 
 #eingabeFeld{
@@ -233,7 +211,6 @@ nav ul li a {
     height:4%;
     margin-left: 3.6%;
     margin-top: 2.5%;
-    cursor: pointer;
 }
 
 

@@ -190,51 +190,11 @@ nav ul li a {
     grid-area: w;
 }
 
-.windowChat img{
-    width: 6%;
-    margin-left:3%;
+.leere{
+    margin-top: 72%;
 }
 
-.windowChat p{
-    font-size: 10pt;
-    width: 35%;
-    padding: 2%;
-    border-radius: 30px;
-    border: 1px solid #929292;
-    margin-left: 8%;
-}
 
-#rightMessage{
-    margin-left: 53%;
-}
-
-#rightPicture{
-    float:right;
-    margin-right: 3%;
-}
-
-.eingabe{
-    display: flex;
-    width: 100%;
-    margin-top: 5%;
-}
-
-#eingabeFeld{
-    background-color: var(--background-color);
-    color: var(--colorText);
-    border: var(--colorText);
-    width:85%;
-    height: 27px;
-    margin: 3% 0% 0% 3.3%;
-}
-
-#sIcon{
-    width: 4%;
-    height:4%;
-    margin-left: 3.6%;
-    margin-top: 2.5%;
-    cursor: pointer;
-}
 
 
 
