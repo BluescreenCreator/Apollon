@@ -144,15 +144,14 @@ nav ul li a {
 
 section {
     background: var(--background-color);
-    display: flex;
-    content: center;
+    display: inline-block;
     width: 100%;
     height: 60%;
     margin-top: 0%;
 }
 
 .leftTeaser {
-    display: flex;
+    display: inline-block;
     height: auto;
     width: auto;
     margin-left: -50px;
@@ -160,7 +159,7 @@ section {
 }
 
 .rightTeaser {
-    display: flex;
+    display: inline-block;
     height: auto;
     width: auto;    
 }
@@ -171,7 +170,7 @@ figure {
 
 /* Positionierung der Teaser */ 
 section .teaser ul {
-    display: flex;
+    display: inline;
     position: center;
     list-style: none;
     margin: 0 -10 px;
