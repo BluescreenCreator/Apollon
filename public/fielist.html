@@ -28,7 +28,32 @@
         firebase.initializeApp(firebaseConfig);
     </script>
 
-    <script src="filelist.js" ></script>
+    <script>
+        
+    // Since you mentioned your images are in a folder,
+    // we'll create a Reference to that folder:
+        var storageRef = firebase.storage().ref("coverpicture");
+
+
+    // Now we get the references of these images
+        storageRef.listAll().then(function(result) {
+        result.items.forEach(function(imageRef) {
+    // And finally display them
+        displayImage(imageRef);
+        });
+        }).catch(function(error) {
+    // Handle any errors
+    });
+
+    function displayImage(imageRef) {
+        imageRef.getDownloadURL().then(function(url) {
+    // TODO: Display the image on the UI
+        }).catch(function(error) {
+    // Handle any errors
+        });
+    }
+
+    </script>
 
     
 </body>
