@@ -12,11 +12,11 @@
 
   <header>
     <div class="divlogo">
-        <img src="images/Logo.png" class="icons">
+      <a href="homepage.html"><img src="images/Logo.png" class="icons"></a>
     </div>
 
     <div class="tutorial">
-        <p><a href="#">WATCH OUR TUTORIAL</a></p>   
+        <p><a href="helpPage.html">WATCH OUR TUTORIAL</a></p>   
     </div>
 
 </header>
@@ -27,7 +27,11 @@
   <li>By giving us more information about yourself, other artists have it easier when they want to find you.</li>
 </ul>
 
-<a href="#"><img src="images/uploadProfilePic.png" alt=""></a>
+<label class="profilePicture">
+  <img src="images/uploadProfilePic.png" alt="uploadProfilePicture">
+  <input type="file" value="upload" id="fileProfilePicture" accept="image/*"/>
+</label>
+
 
 </div>
 
@@ -37,7 +41,7 @@
    <textarea name="moreInfos" id="moreInfos" cols="30" rows="10" placeholder="Write something about yourself"></textarea>
 </div>
 
-  <a href="#"><button id="settingUpAccount">Finish editing your profile</button></a>
+  <a href="myProfile.html"><button id="settingUpAccount">Finish editing your profile</button></a>
 
 <div class="whiteBox"></div>
 
@@ -81,7 +85,54 @@
               </ul>
       </div>
   </div>
-</footer>   
+</footer> 
+
+<script src="https://www.gstatic.com/firebasejs/8.4.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase-storage.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyCAf1IK82QhYaxxK0mdbMjkSUnlb-gzxhc",
+            authDomain: "apollon-da74a.firebaseapp.com",
+            projectId: "apollon-da74a",
+            storageBucket: "apollon-da74a.appspot.com",
+            messagingSenderId: "864434871892",
+            appId: "1:864434871892:web:26bb2b258c0ad5805d17c1"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+
+        // Get elements
+        var uploader = document.getElementById('uploader');
+        var fileProfilePicture = document.getElementById('fileProfilePicture');
+
+        // Listen for file selection
+        fileProfilePicture.addEventListener('change', function (e) {
+            // Get File
+            var file = e.target.files[0];
+
+            // Create storage ref
+            var storageRefProfilePicture = firebase.storage().ref('profilepicture/' + file.name);
+
+            // Upload file
+            var task = storageRefProfilePicture.put(file);
+
+            // Update progress bar
+            task.on('state_changed',
+
+                function progress(snapshot) {
+                    var percentage = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
+                    uploader.value = percentage;
+                },
+
+                function error(err) {
+
+                },
+
+            );
+        });
+    </script>
 
 </body>
     

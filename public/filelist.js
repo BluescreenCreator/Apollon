@@ -7,7 +7,7 @@ function listAll() {
 
   // [START storage_list_all]
   // Create a reference under which you want to list
-  var listRef = storageRef.child('files/uid');
+  var listRef = storageRef.child('audiosample/');
 
   // Find all the prefixes and items.
   listRef.listAll()
@@ -31,7 +31,7 @@ function listPaginate() {
   // [START storage_list_paginate]
   async function pageTokenExample(){
     // Create a reference under which you want to list
-    var listRef = storageRef.child('files/uid');
+    var listRef = storageRef.child('audiosample/');
 
     // Fetch the first page of 100.
     var firstPage = await listRef.list({ maxResults: 100});
