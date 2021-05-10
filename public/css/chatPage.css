@@ -174,7 +174,7 @@ nav ul li a {
 
 .chats{
     display:flex;
-    margin-top: 8%;
+    margin-top: 9%;
     list-style: none;
 }
 
@@ -215,6 +215,7 @@ nav ul li a {
 .eingabe{
     display: flex;
     width: 100%;
+    margin-top: 5%;
 }
 
 #eingabeFeld{
