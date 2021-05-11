@@ -258,7 +258,7 @@ figcaption p{
 
 .likeButton{
     font-size: 30pt;
-    color:#FF1845;    ;
+    color:#FF1845;
     cursor: pointer;
     float: right;
     width: 15%;
@@ -266,6 +266,19 @@ figcaption p{
     margin-top: -23%;
     border-style: none;
 }
+
+.geliketButton{
+    font-size: 30pt;
+    color:#FF1845;
+    float: right;
+    width: 15%;
+    text-align: center;
+    margin-top: -23%;
+    border-style: none;
+    font-family: 'Segoe UI';
+    cursor: pointer;
+}
+
 .sampleResult1{
     margin-right: 10%;
 }
