@@ -140,6 +140,7 @@ input:focus {
     margin-left: -13%;
     width: 7%;
     height: auto;
+    cursor: pointer;
 }
 
 .inputSearch {
@@ -217,6 +218,7 @@ select {
     padding-left: 2px;
     border: 1px solid var(--colorText);
     border-radius: 5px;
+    cursor: pointer;
 }
 
 select::-ms-expand {
@@ -233,6 +235,39 @@ button {
     box-sizing: border-box;
     width: 95%;
     height: 30px;
+}
+
+.separationLine{
+    background-color: #949494;
+    width: 92%;
+    height: 0.01px;
+    margin-left:  4%;
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
+.sampleResults{
+    display:flex;
+    margin-left: 4%;
+    line-height: 24pt;
+}
+
+figcaption p{
+    margin: 0px;
+}
+
+.likeButton{
+    font-size: 30pt;
+    color:#FF1845;    ;
+    cursor: pointer;
+    float: right;
+    width: 15%;
+    text-align: center;
+    margin-top: -23%;
+    border-style: none;
+}
+.sampleResult1{
+    margin-right: 10%;
 }
 
 #imgPartingLine {
