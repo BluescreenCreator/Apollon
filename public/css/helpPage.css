@@ -145,7 +145,7 @@ nav ul li a {
     height: auto;
     margin-left: 13%;
     margin-top: -90px;
-    padding: 20%;
+    padding: 5%;
     box-sizing: border-box;
     border-radius: 21px;
     background: white;
@@ -155,10 +155,20 @@ nav ul li a {
 
 .whiteBoxHeading {
     color: #292929;
-    position: absolute;
+    justify-content: center;
+    text-align: center;
     top: 180%;
     left: 26%;
     z-index: 100;
+    margin: 0px;
+    margin-bottom: 15px;
+}
+
+#video{
+   width: 100%;
+   height: auto;
+   padding: 0px;
+   justify-content: center; 
 }
 
 /*CSS für Footer*/
