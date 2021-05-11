@@ -131,6 +131,31 @@ nav ul li a:hover {
 }
 
 
+.sampleResult1{
+    margin-top: 3.5%;
+    line-height: 24pt;
+}
+
+figcaption p{
+    margin: 0;
+}
+
+figcaption {
+    width: 16.5%;
+}
+
+.geliketButton{
+    font-size: 30pt;
+    color:#FF1845;
+    margin-top: -23%;
+    border-style: none;
+    font-family: 'Segoe UI';
+    cursor: pointer;
+    float: right;
+    background-color:var(--background-color);
+}
+
+
 
 footer{
     margin-left: 3%;
