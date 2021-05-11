@@ -218,6 +218,7 @@ input:focus {
     height:4%;
     margin-left: 3.6%;
     margin-top: 2.5%;
+    cursor: pointer;
 }
 
 
