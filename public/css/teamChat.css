@@ -156,8 +156,9 @@ nav ul li a {
     height: 75%;
 }
 
-.rightHeader p{
+.rightHeader h4{
     margin-top: 3%;
+    margin-left: 3%;
 }
 
 
@@ -190,34 +191,11 @@ nav ul li a {
     grid-area: w;
 }
 
-.windowChat img{
-    width: 6%;
-    margin-left:3%;
-}
-
-.windowChat p{
-    font-size: 10pt;
-    width: 35%;
-    padding: 2%;
-    border-radius: 30px;
-    border: 1px solid #929292;
-    margin-left: 8%;
-}
-
-#rightMessage{
-    margin-left: 53%;
-}
-
-#rightPicture{
-    float:right;
-    margin-right: 3%;
-}
-
 .eingabe{
     display: flex;
     width: 100%;
-    margin-top: 5%;
-    float: bottom;
+    margin-top: 60%;
+    margin-bottom: 3%;
 }
 
 #eingabeFeld{
