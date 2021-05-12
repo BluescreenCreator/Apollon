@@ -147,7 +147,8 @@ figcaption {
 .geliketButton{
     font-size: 30pt;
     color:#FF1845;
-    margin-top: -23%;
+    margin-top: -22%;
+    width: 40%;
     border-style: none;
     font-family: 'Segoe UI';
     cursor: pointer;
@@ -155,7 +156,12 @@ figcaption {
     background-color:var(--background-color);
 }
 
-
+.geliketButton img{
+    width: 33%;
+    float: right;
+    margin-top: 17%;
+    padding-right: 0%;
+}
 
 footer{
     margin-left: 3%;
