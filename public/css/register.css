@@ -231,6 +231,10 @@ input {
   margin-left: 11.5%;
 }
 
+.btn-action{
+  cursor: pointer;
+}
+
 /* Header */
 
 header .tutorial p{

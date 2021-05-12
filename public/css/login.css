@@ -256,6 +256,10 @@ input[type=checkbox] {
   margin-left: 11.5%;
 }
 
+.btn-action{
+  cursor: pointer;
+}
+
 /* CSS für Footer*/
 
 footer nav {
