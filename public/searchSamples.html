@@ -101,7 +101,7 @@
             <img src="images/sample1.png" id="Sample German Future">
             <figcaption>
                 <p>Trap <br>German Future</p>
-                <button class="likeButton" onclick="likeSample()">&#x2661;</button>
+                <button class="likeButton" onclick="likeSample()"><img src="images/likeHeart.png"></button>
             </figcaption>
         </div>
     
@@ -109,7 +109,7 @@
             <img src="images/sample2.png" id="Sample Modular Madness">
             <figcaption>
                 <p>Techno <br> Modular Madness</p>
-                <button class="likeButton" onclick="likeSample()">&#x2661;</button>
+                <button class="likeButton" onclick="likeSample()"><img src="images/likeHeart.png"></button>
             </figcaption>
         </div>
     </div>
@@ -179,12 +179,12 @@
     <script>
         function likeSample(){
          const heartbutton = document.querySelector('.likeButton');
-         heartbutton.outerHTML =  `<button class="geliketButton" onclick="dislikeSample()">&#9829;</button>`;
+         heartbutton.outerHTML =  `<button class="geliketButton" onclick="dislikeSample()"><img src="images/dislikeButton.png"></button>`;
         }
  
         function dislikeSample(){
             const firstHeartbutton = document.querySelector('.geliketButton');
-            firstHeartbutton.outerHTML = `<button class="likeButton" onclick="likeSample()">&#x2661;</button>`;
+            firstHeartbutton.outerHTML = `<button class="likeButton" onclick="likeSample()"><img src="images/likeHeart.png"></button>`;
         }
     </script>
     
