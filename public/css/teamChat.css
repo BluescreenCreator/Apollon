@@ -113,187 +113,116 @@ nav ul li a {
 
 
 /*CSS für Hauptteil*/
-
-.banner{
-    width: 100%;
-    margin-top: 2%;
-    margin-bottom: 0%;
+#container{
+    width: 85%;
+    margin-left: 7.3%;
+    outline: 1px solid #929292;
+    display:grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 12%;
+    grid-template-areas: "l r r" "c w w";
 }
 
-.welcomeBanner{
-    display:inline-table;
+.leftHeader{
+    grid-area: l;
+    display: flex;
+    height:100%;
+    background-color: #929292;
 }
 
-.welcomeText{
-    z-index: 1000;
-    margin-left: 61.7%;
-    margin-top: -16.5%;
+.leftHeader img{
+    margin: 3%;
+    margin-left: 8%;
+    width: 17%;
 }
 
-.wrapper {
-    width: 100%;
-    padding: 0 15px;
-    margin: 0;
-    transform: scale(0.7);
+.leftHeader p{
+    margin-top: 8%;
 }
 
-.link {
-    color: #fff;
-    text-decoration: none;
-}
+    
 
-section {
-    background: var(--background-color);
-    display: inline-block;
-    width: 100%;
-    height: 60%;
-    margin-top: 0%;
-}
-
-.leftTeaser {
-    display: inline-block;
-    height: auto;
-    width: auto;
-    margin-left: -50px;
-    margin-right: 45px;
-}
-
-.rightTeaser {
-    display: inline-block;
-    height: auto;
-    width: auto;    
-}
-
-figure {
+.rightHeader{
+    grid-area: r;
+    display: flex;
+    height:100%;
+    background-color: #929292;
     text-align: center;
 }
 
-/* Positionierung der Teaser */ 
-section .teaser ul {
-    display: inline;
-    position: center;
+.rightHeader img{
+    margin: 1%;
+    margin-left: 5%;
+    height: 75%;
+}
+
+.rightHeader h4{
+    margin-top: 3%;
+    margin-left: 3%;
+}
+
+
+
+.chatsLeft{
+    grid-area: c;
+    margin-left: 8%;
+    display: inline-block;
+    border-right: 1px solid #929292;
+    cursor: pointer;
+}
+.chatsLeft img{
+    width: 20%;
+}
+
+.chats{
+    display:flex;
+    margin-top: 9%;
     list-style: none;
-    margin: 0 -10 px;
-    padding: 20px 0;
+}
+
+.chats p{
+    margin-left: 5%;
 }
 
 
-/* Um Teaser anzupassen */
-section .teaser ul li {
-    width: 48%;
-    display: inline-block;
-    position: relative;
-    overflow: hidden;
+
+
+.windowChat{
+    grid-area: w;
 }
 
-
-/* Um Bilder vollständig und gleichgroß anzuzeigen */
-section .teaser ul li .yourTeams {
-    width: 582px;
-    height: 441px;
-    display: inline;
-    cursor: pointer;
-}
-
-section .teaser ul li .likedSamples {
-    width: 582px;
-    height: 441px;
-    display: inline;
-    cursor: pointer;
-}
-
-section .teaser ul li h3 {
-    width: 80%;
-    margin-top: 200px;
-    margin-left: 80px;
-    margin-right: 80px;
-    font-family: 'Raleway';
-    font-size: 40px;
-    color: #fff;
-}
-
-section .teaser ul li .text{
-    color: #fff;
-    position: absolute;
-    width: auto;
-    height: auto;
-    text-align: center;
-    transform: scale(1) translate(7%, -4.7%);
-    overflow: center;
-    cursor: pointer;
-}
-
-/* Hintergrundfarbe bei hover über Teaser */
-section .teaser ul li:hover .text {
-    width: 582px;
-    height: 441px;
-    text-align: center;
-    bottom: 0;
-    background: rgba(97, 96, 96, 0.7);
-}
-
-
-.separationLine{
-    background-color: #949494;
-    width: 93%;
-    height: 0.01px;
-    margin-left:  40px;
-    margin-top: 0px;
-    padding-top: 0px;
-}
-
-/*Popular Artists*/
-.popularArtistsHeading{
-    padding-left: 40px;
-    margin-bottom: 12px;
-}
-
-
-.artistPictures{
-    padding-right: 10%;
-    padding-top: 2%;
-}
-
-
-.popularArtistList{
+.eingabe{
     display: flex;
-    margin-left: 3%;
+    width: 100%;
+    margin-top: 60%;
+    margin-bottom: 3%;
 }
 
-.artist{
-    margin-right: 9.25%;
-    margin-top: 2%;
+#eingabeFeld{
+    background-color: var(--background-color);
+    color: var(--colorText);
+    border: 1px solid var(--colorText);
+    border-radius: 5px;
+    font-size: var(--p);
+    padding: 5px;
+    width:85%;
+    height: 27px;
+    margin: 3% 0% 0% 3.3%;
+}
+
+input:focus {
+    outline: none;
+}
+
+#sIcon{
+    width: 4%;
+    height:4%;
+    margin-left: 3.6%;
+    margin-top: 3%;
+    cursor: pointer;
 }
 
 
-/*Top-Ten*/
-.topTenHeading{
-    padding-top: 100px;
-    padding-left: 40px;
-    margin-bottom: 12px;
-}
-
-.samplePictures{
-    padding-right: 10%;
-    padding-top: 2%;
-    width: 208px;
-}
-
-
-.sampleDescription{
-    padding-right: 0%;
-    margin-right: -7%;
-}
-
-.topTenList{
-    display: flex;
-    margin-left: 3%;
-}
-
-.sample{
-    margin-top: 2%;
-    margin-right: 9.25%;
-}
 
 /*CSS für Footer*/
 footer p{
