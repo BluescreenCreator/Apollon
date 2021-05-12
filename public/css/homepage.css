@@ -248,25 +248,22 @@ section .teaser ul li:hover .text {
     margin-bottom: 12px;
 }
 
+
 .artistPictures{
-    max-width: 16%;
     padding-right: 10%;
     padding-top: 2%;
 }
 
-#klanglos{
-    max-width: 16%;
-    padding-right: 10%;
-    padding-top: 2%;
-}
 
 .popularArtistList{
     display: flex;
-    position: relative;
-    margin-left: 4.5%;
+    margin-left: 3%;
 }
 
-
+.artist{
+    margin-right: 9.25%;
+    margin-top: 2%;
+}
 
 
 /*Top-Ten*/
@@ -277,16 +274,11 @@ section .teaser ul li:hover .text {
 }
 
 .samplePictures{
-    max-width: 16%;
     padding-right: 10%;
     padding-top: 2%;
+    width: 208px;
 }
 
-.pictureDescription{
-    display: flex;
-    padding-right: 0%;
-    margin-left:4.5%;
-}
 
 .sampleDescription{
     padding-right: 0%;
@@ -295,9 +287,13 @@ section .teaser ul li:hover .text {
 
 .topTenList{
     display: flex;
-    margin-left: 4.5%;
+    margin-left: 3%;
 }
 
+.sample{
+    margin-top: 2%;
+    margin-right: 9.25%;
+}
 
 /*CSS für Footer*/
 footer p{
